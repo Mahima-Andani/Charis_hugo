@@ -5,152 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+  <link rel="stylesheet" href="css/style.css">
   {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
   <title>Charis</title>
 </head>
 <body>
-  <header>
-      <div class="container flex">
-          <!-- nav toggle -->
-          <div class="toggle">
-          </div>
-          <!-- logo -->
-          <a href="#" class="logo">
-              <img src="/images/Charish-logo.png" alt="Charis">
-          </a>
-          <nav class="flex">
-              <!-- nav menu-->
-              <ul class="navigation flex">
-                  <li><a href="#">Jute Bags</a></li>
-                  <li><a href="#">Gifts</a></li>
-                  <li><a href="#">Contact us</a></li>
-              </ul>
-              <!-- nav icons -->
-              <ul class="icons flex">
-                  <!-- user login and signup dropdown along with popup -->
-                  <div class="vector-2">
-                      <li>
-                          <a href="#">
-                              <img src="/images/Vector-2.png" alt="user"> 
-                              <span>Login</span>
-                          </a>
-                      </li>
-                      <div class="dropdown-menu">
-                          <a href="#" id="show-login">Login</a>
-                          <a href="#">Wishlist</a>
-                          <a href="#">Settings</a>
-                          <a href="#">Your Profile </a>
-                      </div>
-                  </div>
-                  <li class="vector-1">
-                      <a href="#">
-                          <img src="/images/Vector-1.png" alt="contact">
-                      </a>
-                  </li>
-                  <li class="vector-3">
-                      <a href="#">
-                          <img src="/images/Vector-3.png" alt="cart">
-                          <span>Cart</span>
-                      </a>
-                  </li>
-              </ul>
-          </nav>   
-      </div>
-      <!-- login/ signup form popup -->
-      <div class="popup">
-          <div class="close-btn">&times;</div>
-          <div class="form">
-              <h2>Log in</h2>
-              <div class="form-element">
-                  <label for="email">Email</label>
-                  <input type="text" placeholder="Enter your email">
-              </div>
-              <div class="form-element">
-                  <label for="password">Password</label>
-                  <input type="password"  placeholder="Enter your password">
-              </div>
-              <div class="form-element">
-                  <input type="checkbox" id="remember-me">
-                  <label for="remember-me">Remember-me</label>
-              </div>
-              <div class="form-element">
-                  <button>Sign in</button>
-              </div>
-              <div class="form-element">
-                  <a href="#">Forgot Password</a>
-              </div>
-              <div class="form-element">
-                  <span> 
-                      new user?
-                      <a href="#" id="show-register">Register</a>
-                  </span>
-              </div>
-          </div>
-      </div> 
-      <div class="popup2">
-          <div class="close-btn2">&times;</div>
-          <div class="form">
-              <h2>sign up</h2>
-              <div class="form-element">
-                  <label for="phone number">Phone Number</label>
-                  <input type="text" placeholder="Enter your phone number">
-              </div>
-              <div class="form-element">
-                  <label for="email">Email</label>
-                  <input type="text" placeholder="Enter your email">
-              </div>
-              <div class="form-element">
-                  <label for="password"></label>
-                  <input type="password"  placeholder="Enter your password">
-              </div>
-              <div class="form-element">
-                  <input type="checkbox" id="remember-me">
-                  <label for="remember-me">Remember-me</label>
-              </div>
-              <div class="form-element">
-                  <button>Sign up</button>
-              </div>
-              <!-- <div class="form-element">
-                  <a href="#">Forgot Password</a>
-              </div> -->
-              <div class="form-element">
-                  <span>Existing user?</span>
-                  <a href="#">Login</a>
-              </div>
-          </div>
-      </div>
-  </header>
-  <section class="flex">
-      <div class="bg">
-      </div>
-      <div class="content flex">
-          <div class="textbox">
-              <h2>Charis Jute Bags</h2>
-              <p>Why should you buy a Jute bag? </p>
-              <a href="#">Learn More</a>
-          </div>
-          <div class="imgbox">
-              <img src="/images/png/Be_Happy_carry_bag.png" alt="">
-          </div>
-      </div>
-      <ul class="thumb">
-          <li data-text="Gift Giveaway Bag" class="active">
-              <img src="./images/png/Gift _Giveaway_Bag.png"
-                  onclick="imgSlider('./images/png/Gift _Giveaway_Bag.png');changeBgColor('#cdb446')">
-          </li>
-          <li data-text="Jute School bag">
-              <img src="./images/png/Jute_School_bag.png"
-                  onclick="imgSlider('./images/png/Jute_School_bag.png');changeBgColor('#a54935')">
-          </li>
-          <li data-text="Shopping Jute bag">
-              <img src="./images/png/Be_Happy_carry_bag.png"
-                  onclick="imgSlider('./images/png/Be_Happy_carry_bag.png');changeBgColor('#ba9b78')">
-          </li>
-          <li data-text="Women Style bag">
-              <img src="./images/png/Women___Style.png"
-                  onclick="imgSlider('./images/png/Women___Style.png');changeBgColor('#de5455')">
-          </li>
-      </ul>
-  </section>
+    <!-- Mahima navbar, image slider, Muskan-login -->
+    <header>
+        <div class="container flex">
+            <!-- nav toggle -->
+            <div class="toggle">
+            </div>
+            <!-- logo -->
+            <a href="#" class="logo">
+                <img src="/images/Charish-logo.png" alt="Charis">
+            </a>
+            <nav class="flex">
+                <!-- nav menu-->
+                <ul class="navigation flex">
+                    <li><a href="#">Jute Bags</a></li>
+                    <li><a href="#">Gifts</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <!-- nav icons -->
+                <ul class="icons flex">
+                    <!-- user login and signup dropdown along with popup -->
+                    <div class="vector-2">
+                        <li>
+                            <a href="#">
+                                <img src="/images/Vector-2.png" alt="user"> 
+                                <span>Login</span>
+                            </a>
+                        </li>
+                        <div class="dropdown-menu">
+                            <a href="#" id="show-login">Login</a>
+                            <a href="#">Wishlist</a>
+                            <a href="#">Settings</a>
+                            <a href="#">Your Profile </a>
+                        </div>
+                    </div>
+                    <li class="vector-1">
+                        <a href="#">
+                            <img src="/images/Vector-1.png" alt="contact">
+                        </a>
+                    </li>
+                    <li class="vector-3">
+                        <a href="#">
+                            <img src="/images/Vector-3.png" alt="cart">
+                            <span>Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>   
+        </div>
+        <!-- login/ signup form popup -->
+        <div class="popup">
+            <div class="close-btn">×</div>
+            <div class="form">
+                <h2>Log in</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember-me</label>
+                </div>
+                <div class="form-element">
+                    <button>Sign in</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Forgot Password</a>
+                </div>
+                <div class="form-element">
+                    <a href="#" id="show-register">
+                        <span> 
+                            new user? 
+                        </span> 
+                        Register
+                    </a>
+                </div>
+            </div>
+        </div> 
+        <div class="popup2">
+            <div class="close-btn2">×</div>
+            <div class="form">
+                <h2>sign up</h2>
+                <div class="form-element">
+                    <label for="phone number">Phone Number</label>
+                    <input type="text" placeholder="Enter your phone number">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember-me</label>
+                </div>
+                <div class="form-element">
+                    <button>Sign up</button>
+                </div>
+                <!-- <div class="form-element">
+                    <a href="#">Forgot Password</a>
+                </div> -->
+                <div class="form-element">
+                    <a id="login-reappear" href="#">
+                        <span>
+                            Existing user? 
+                        </span>
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="flex">
+        <div class="bg">
+        </div>
+        <div class="content flex">
+            <div class="textbox">
+                <h2>Charis Jute Bags</h2>
+                <p>Why should you buy a Jute bag? </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="/images/png/Be_Happy_carry_bag.png" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+
+            <li data-text="Gift Giveaway Bag" class="active">
+                <img src="./images/png/Gift _Giveaway_Bag.png"
+                    onclick="imgSlider('./images/png/Gift _Giveaway_Bag.png');changeBgColor('#cdb446')">
+            </li>
+            <li data-text="Jute School bag">
+                <img src="./images/png/Jute_School_bag.png"
+                    onclick="imgSlider('./images/png/Jute_School_bag.png');changeBgColor('#a54935')">
+            </li>
+            <li data-text="Shopping Jute bag">
+                <img src="./images/png/Be_Happy_carry_bag.png"
+                    onclick="imgSlider('./images/png/Be_Happy_carry_bag.png');changeBgColor('#ba9b78')">
+            </li>
+            <li data-text="Women Style bag">
+                <img src="./images/png/Women___Style.png"
+                    onclick="imgSlider('./images/png/Women___Style.png');changeBgColor('#de5455')">
+            </li>
+        </ul>
+    </section>
     
