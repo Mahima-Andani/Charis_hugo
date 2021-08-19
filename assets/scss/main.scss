@@ -523,6 +523,7 @@ section {
     margin: 10%;
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.1);
+    height: 90%;
   }
   .product__box:hover{
     background-color: rgba(0, 0, 0, 0.5);
@@ -544,5 +545,8 @@ section {
       cursor: pointer;
     }
   }
-
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
