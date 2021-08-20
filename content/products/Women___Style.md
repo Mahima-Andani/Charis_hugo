@@ -3,8 +3,10 @@ description = "A classy jute purse for woman"
 id = "Women___Style"
 image = "/uploads/women___style.png"
 name = "Jute Bag"
-price = 599
 oldprice = 999
+price = 599
+product_del_price = "599"
+product_price = "599"
 product_url = ""
 
 +++
