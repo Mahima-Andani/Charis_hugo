@@ -27,6 +27,11 @@ fields:
   config:
     required: false
   label: product_price
+- name: product_del_price
+  type: text
+  config:
+    required: false
+  label: product_del_price
 - name: description
   type: textarea
   default: ''
@@ -46,11 +51,6 @@ fields:
   config:
     required: false
   label: product_url
-- name: product_del_price
-  type: text
-  config:
-    required: false
-  label: product_del_price
 pages:
 - content/products/Be_Happy_carry_bag.md
 - content/products/Jute_School_bag.md
