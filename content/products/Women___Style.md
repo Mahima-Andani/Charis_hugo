@@ -1,8 +1,8 @@
 +++
-description = "Women Style"
+description = "A classy jute purse for woman"
 id = "Women___Style"
 image = "/uploads/women___style.png"
-name = "Women Style"
+name = "Jute Bag"
 price = 599
 oldprice = 999
 product_url = ""
