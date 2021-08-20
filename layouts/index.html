@@ -1,9 +1,13 @@
 {{ partial "header.html" . }}
-<main class="products">
-  {{ range where .Site.RegularPages "Section" "products"}}
-    {{ partial "product.html" .Params }}
-  {{ end }}
-</main>
+<!-- <main class="products"> -->
+  <section class="products featured-products">
+    <div class="container flex">
+      {{ range where .Site.RegularPages "Section" "products"}}
+        {{ partial "product.html" .Params }}
+      {{ end }}
+    </div>
+  </section>
+<!-- </main> -->
 {{ partial "featuredproducts.html" . }}
 {{ partial "aboutus.html" . }}
 {{ partial "footer.html" . }}
