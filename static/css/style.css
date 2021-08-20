@@ -484,6 +484,10 @@ ul.navigation.flex {
 .featured-products .icon img {
   width: 30px;
 }
+.featured-products .icon img:hover{
+  border: 1.5px solid #fff2;
+  border-radius: 50%;
+}
 @media(min-width:800px){
   .featured-products .flex {
     flex-wrap: nowrap;
