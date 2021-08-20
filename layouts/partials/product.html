@@ -5,7 +5,10 @@
         <div class="info">
           <h1 class="product__name title">{{ .name }}</h1>
           <h3 class="product__description">{{ .description }}</h3>
-            <div class="product__price MRP"><h2>₹ {{ .price }}/-</h2></div>
+            <div class="product__price MRP">
+              <h2>₹ {{ .price }}/-</h2>
+              <h3><del>₹ {{ .oldprice }}/-</del></h3>
+            </div>
             <div class="icon">
                 <img src="images/manav/cart.png" alt="cart">
                 <img src="images/manav/fav_icon.png" alt="cart">
