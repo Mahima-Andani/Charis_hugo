@@ -24,6 +24,13 @@ a{
 section {
   position: relative;
   width: 100%;
+  /* min-height: 100vh; */
+  /* padding: 4rem; */
+  /* overflow-x: hidden; */
+}
+.image-slider {
+  position: relative;
+  width: 100%;
   min-height: 100vh;
   padding: 4rem;
   overflow-x: hidden;
@@ -62,25 +69,25 @@ header .container{
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
 }
-ul.navigation.flex {
+.nav_list {
   justify-content: space-around;
   width: 35vw;
   /* border: 2px solid; */
 }
-.icons{
+.nav_icons{
   position: absolute;
   right: 55px;
 }
-.icons img{
+.nav_icons img{
   display: unset;
 }
 .logo img {
   height: 50px;
 }
-.navigation li ,.icons {
+.nav_item ,.nav_icons {
   list-style: none;
 }
-.navigation li a {
+.nav_link {
   /* display: inline-block; */
   color: #9b8055;
   /* font-weight: 400; */
@@ -441,7 +448,7 @@ ul.navigation.flex {
   padding: 1rem;
   transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
   /* border: 1px solid #dedede; */
-  border-radius: 5%;
+  border-radius: 10px;
 }
 .featured-products .card:hover {
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
@@ -501,6 +508,21 @@ ul.navigation.flex {
   .featured-products .flex {
     flex-wrap: nowrap;
   }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1em; */
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
 }
 
 /* Muskan about us */

@@ -14,30 +14,25 @@
     <!-- Mahima navbar, image slider, Muskan-login -->
     <header>
         <div class="container flex">
-            <!-- nav toggle -->
-            <div class="toggle">
-            </div>
             <!-- logo -->
             <a href="#" class="logo">
                 <img src="/images/Charish-logo.png" alt="Charis">
             </a>
             <nav class="flex">
-                <!-- nav menu-->
-                <ul class="navigation flex">
-                    <li><a href="#">Jute Bags</a></li>
-                    <li><a href="#">Gifts</a></li>
-                    <li><a href="#">Contact us</a></li>
+                <!-- main nav-->
+                <ul class="nav_list flex">
+                    <li class="nav_item"><a class="nav_link" href="#">Jute Bags</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#">Gifts</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#">Contact us</a></li>
                 </ul>
                 <!-- nav icons -->
-                <ul class="icons flex">
+                <div class="nav_icons flex">
                     <!-- user login and signup dropdown along with popup -->
-                    <div class="vector-2">
-                        <li>
-                            <a href="#">
-                                <img src="/images/Vector-2.png" alt="user"> 
-                                <span>Login</span>
-                            </a>
-                        </li>
+                    <div class="nav_dropdown">
+                        <div>
+                            <img src="/images/Vector-2.png" alt="user">
+                            <span>Login</span>
+                        </div>
                         <div class="dropdown-menu">
                             <a href="#" id="show-login">Login</a>
                             <a href="#">Wishlist</a>
@@ -45,21 +40,26 @@
                             <a href="#">Your Profile </a>
                         </div>
                     </div>
-                    <li class="vector-1">
+                    <div class="vector-1">
                         <a href="#">
                             <img src="/images/Vector-1.png" alt="contact">
                         </a>
-                    </li>
-                    <li class="vector-3 snipcart-checkout">
+                    </div>
+                    <div class="vector-3">
                         <a href="#">
                             <img src="/images/Vector-3.png" alt="cart">
                             <span>Cart</span>
-                            <sup class="snipcart-items-count"></sup>
                         </a>
-                    </li>
-                </ul>
-            </nav>   
+                    </div>
+                </div>
+            </nav>
+            <!-- nav toggle -->
+            <button class="nav__toggle">
+                <span class="hamburger"></span>
+            </button>
         </div>
+
+    </header>
         <!-- login/ signup form popup -->
         <div class="popup">
             <div class="close-btn">×</div>
@@ -130,7 +130,7 @@
             </div>
         </div>
     </header>
-    <section class="flex">
+    <section class=".image-slider flex">
         <div class="bg">
         </div>
         <div class="content flex">
