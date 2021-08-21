@@ -359,7 +359,7 @@ header .container{
     color: inherit;
     border: none;
   }
-  .nav__toggle .active {
+  .nav__toggle.active {
     position: fixed;
     right: 20px;
     /* background: url(/images/closenav.svg); */
@@ -370,7 +370,7 @@ header .container{
   .nav_list {
     display: none;
   }
-  .nav_list .active {
+  .nav_list.active {
     position: absolute;
     top: 9vh;
     right: 0;

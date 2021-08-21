@@ -60,6 +60,15 @@
             <button class="nav__toggle">
                 <span class="hamburger"></span>
             </button>
+            <script>
+                let menuToggle = document.querySelector('.nav__toggle');
+                    let navigation = document.querySelector('.nav_list');
+                    
+                    menuToggle.onclick = function () {
+                        // menuToggle.classList.toggle('active')
+                        navigation.classList.toggle('active')
+                    }
+            </script>
         </div>
     </header>
         <!-- login/ signup form popup -->
