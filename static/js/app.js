@@ -1,11 +1,11 @@
 // navbar mahima 
 // Hamburger menu
-let menuToggle = document.querySelector('.toggle');
-let navigation = document.querySelector('.navigation');
+let nav__toggle = document.querySelector('.nav__toggle');
+let nav_list = document.querySelector('.nav_list');
 
-menuToggle.onclick = function () {
-    menuToggle.classList.toggle('active')
-    navigation.classList.toggle('active')
+nav__toggle.onclick = function () {
+  nav__toggle.classList.toggle('active')
+  nav_list.classList.toggle('active')
 }
 
 //show nav on scroll

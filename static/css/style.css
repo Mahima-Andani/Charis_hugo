@@ -99,17 +99,20 @@ header .container{
 .vector-1{
   padding-inline: 15px;
 }
-.icons a{
+.nav_icons a {
   text-decoration: none;
   color: #9b8055;
 }
+.nav__toggle{
+  display: none;
+}
 
-.vector-2 li a img, .vector-3 a img{
+/* .vector-2 li a img, .vector-3 a img{
   height: 0%;
 }
 .vector-2 li a span, .vector-3 a span{
   margin-left: 10px;
-}
+} */
 
 /* login and signup form popup on vector-2 img */
 
@@ -128,7 +131,7 @@ header .container{
   flex-direction: column;
   padding: 1em;
 }
-.vector-2:hover .dropdown-menu{
+.nav_dropdown:hover .dropdown-menu{
   display: block;
   background-color: #fff;
 }
@@ -333,26 +336,27 @@ header .container{
   .bg::before {
     display: none;
   }
-  .vector-2 li a span, .vector-3 a span{
+  .login-span, .vector-3 a span{
     display: none;
   }
-  .vector-2:hover .dropdown-menu{
+  /* .vector-2:hover .dropdown-menu{
     display: block;
     background-color: #fff;
-  }
-  .toggle {
+  } */
+  .nav__toggle {
+    display: block;
     position: absolute;
     right: 20px;
     width: 25px;
     height: 25px;
     cursor: pointer;
-    background: url(/images/bars-solid.svg);
-    background-size: 25px;
+    /* background: url(/images/bars-solid.svg); */
+    /* background-size: 25px;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     z-index: 3;
   }
-  .toggle.active {
+  .nav__toggle .active {
     position: fixed;
     right: 20px;
     background: url(/images/closenav.svg);
@@ -360,10 +364,10 @@ header .container{
     background-position: center;
     background-repeat: no-repeat;
   }
-  nav .navigation {
+  .nav_list {
     display: none;
   }
-  nav .navigation.active {
+  .nav_list .active {
     position: absolute;
     top: 9vh;
     right: 0;
@@ -378,20 +382,20 @@ header .container{
     padding: 1em;
     box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
   }
-  nav .navigation li {
+  .nav_item {
     margin-block:1em
    
   }
-  nav .navigation li a {
+  .nav_link {
     /* font-size: 1.2em; */
     /* margin: 5px 0; */
     color: #fff;
   }
-  nav .navigation li a:hover{
+  .nav_link:hover{
     /* background-color: #9b805590; */
     /* color: #fff; */
   }
-  section {
+  .image-slider {
     padding: 20px;
     padding-bottom: 120px;
   }
