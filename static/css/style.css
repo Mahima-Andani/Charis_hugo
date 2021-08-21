@@ -355,14 +355,17 @@ header .container{
     background-position: center;
     background-repeat: no-repeat; */
     z-index: 3;
+    background: none;
+    color: inherit;
+    border: none;
   }
   .nav__toggle .active {
     position: fixed;
     right: 20px;
-    background: url(/images/closenav.svg);
-    background-size: 20px;
+    /* background: url(/images/closenav.svg); */
+    /* background-size: 20px;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
   .nav_list {
     display: none;
@@ -394,6 +397,24 @@ header .container{
   .nav_link:hover{
     /* background-color: #9b805590; */
     /* color: #fff; */
+  }
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+    background: #9b8055;
+    height: 3px;
+    margin: 0 auto;
+  }
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+  }
+  .hamburger::before {
+    transform: translateY(-6px);
+  }
+  .hamburger::after {
+    transform: translateY(3px);
   }
   .image-slider {
     padding: 20px;
