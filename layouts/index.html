@@ -2,6 +2,7 @@
 {{ partial "slider.html" . }}
 <!-- <main class="products"> -->
   <section class="products featured-products">
+    <h1 class="title_of_page">Jute bags On sale</h1>
     <div class="container flex">
       {{ range where .Site.RegularPages "Section" "products"}}
         {{ partial "product.html" .Params }}
