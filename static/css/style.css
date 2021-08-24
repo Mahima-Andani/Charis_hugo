@@ -16,6 +16,13 @@ img{
 a{
   text-decoration: none !important;
 }
+.title_of_page{
+  text-align: left;
+  margin-inline: 5%;
+  font-size: 250%;
+  border-bottom: 1px solid #352C1C;
+  opacity: 0.7;
+}
 .flex{
   display: flex;
   align-items: center;
@@ -691,13 +698,6 @@ header .container{
 
 .featured-products {
   padding-block: 5rem;
-}
-.featured-products .title_of_page{
-  text-align: left;
-  margin-inline: 5%;
-  font-size: 250%;
-  border-bottom: 1px solid #352C1C;
-  opacity: 0.7;
 }
 .featured-products .container {
   width: min(1200px, 80%);
