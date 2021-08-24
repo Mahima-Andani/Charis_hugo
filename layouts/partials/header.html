@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <title>Charis</title>
 </head>
 <body>
@@ -170,56 +172,5 @@
                 })
         </script>
 
-    <section class="image-slider flex">
-        <div class="bg">
-        </div>
-        <div class="content flex">
-            <div class="textbox">
-                <h2>Charis Jute Bags</h2>
-                <p>Why should you buy a Jute bag? </p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="imgbox">
-                <img src="/images/png/Be_Happy_carry_bag.png" alt="">
-            </div>
-        </div>
-        <ul class="thumb">
 
-            <li data-text="Gift Giveaway Bag" class="active">
-                <img src="./images/png/Gift _Giveaway_Bag.png"
-                    onclick="imgSlider('./images/png/Gift _Giveaway_Bag.png');changeBgColor('#cdb446')">
-            </li>
-            <li data-text="Jute School bag">
-                <img src="./images/png/Jute_School_bag.png"
-                    onclick="imgSlider('./images/png/Jute_School_bag.png');changeBgColor('#a54935')">
-            </li>
-            <li data-text="Shopping Jute bag">
-                <img src="./images/png/Be_Happy_carry_bag.png"
-                    onclick="imgSlider('./images/png/Be_Happy_carry_bag.png');changeBgColor('#ba9b78')">
-            </li>
-            <li data-text="Women Style bag">
-                <img src="./images/png/Women___Style.png"
-                    onclick="imgSlider('./images/png/Women___Style.png');changeBgColor('#de5455')">
-            </li>
-        </ul>
-    </section>
-    <script>
-        function imgSlider(anything) {
-            document.querySelector('.imgbox img').src = anything;
-        }
-        function changeBgColor(color) {
-            const bg = document.querySelector('.bg');
-            bg.style.background = color;
-        }
-        let el = document.querySelectorAll('.thumb li');
-        for (let i = 0; i < el.length; i++) {
-            el[i].onclick = function () {
-                var c = 0;
-                while (c < el.length) {
-                    el[c++].className = 'check';
-                }
-                el[i].className = 'check active';
-            }
-        }
-    </script>
 
