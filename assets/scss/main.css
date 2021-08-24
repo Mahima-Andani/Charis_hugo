@@ -1,0 +1,15 @@
+.products .buy-button {
+  width: 90%;
+  margin: 5%;
+  padding: .5rem;
+  font-size: 120%;
+  border: none;
+  color: white;
+  background-color: #ff9f00;
+  cursor: pointer;
+}
+
+.products .buy-button:hover {
+  background-color: #ff9d00d0;
+}
+/*# sourceMappingURL=main.css.map */
