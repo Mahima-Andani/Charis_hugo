@@ -1,5 +1,5 @@
 +++
-description = ""
+description = "A thoughtful gift bag for giveaway"
 id = "gift_giveaway_bag"
 image = "/uploads/gift-_giveaway_bag.png"
 name = "Gift giveaway bag"

@@ -36,7 +36,7 @@ header{
   z-index: 10;
 }
 header .container{
-  background: rgb(220, 205, 188);
+  background: #F8F5F2;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   /* position: fixed; */
   width: 100%;
@@ -698,7 +698,7 @@ header .container{
 }
 .featured-products .flex {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1em;
   flex-wrap: wrap;
 }
@@ -723,7 +723,7 @@ header .container{
   z-index: 2;
   transition: all 0.75s ease-out;
 }
-.featured-products .info h1 {
+.featured-products .info p {
   font-size: min(1.4rem, 7vw);
   transition: all 0.95s ease-out;
   text-align: center;
