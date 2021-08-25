@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.85.0" />
+	<meta name="generator" content="Hugo 0.86.1" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
   <link rel="stylesheet" href="css/style.css">
   
-  <link rel="stylesheet" href="/scss/main.min.282e7de16c860c36c88dc6af07b317b843bfc7c4336898cf1efc39063dba8c47.css">
+  <link rel="stylesheet" href="/scss/main.min.2c208d51b3b8de932ee2bdb8ff4ebeef1e112641ce0deeb26046c777cbf03c83.css">
   <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <title>Charis</title>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="vector-1">
                         <a href="#">
-                            <img src="/images/Vector-1.png" alt="contact">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
                         </a>
                     </div>
                     <div class="vector-3 snipcart-checkout">
@@ -175,273 +175,279 @@
 
 
 <style>
-     
-    .fg-slider p { color: #fff; }
-    .fg-content a {color: #fff;}
-    .fg-slider h1 { margin: 150px auto 30px auto; text-align: center; }
+   
+ 
+
+.fg-slider h2 {
+   
+  font-size: 2rem;
+  line-height: 2;
+  color: #fff;
+}
+
 
 </style>
 
 
-    <div class="fg-slider" id="slider-1">
-        <div class="fg-content text-center">
-            <p>A jute bag can save something?</p>
-            <a href="#about-me" class="btn hover">
-                <i class="fa fa-angle-right" aria-hidden="true"></i> More about Charis...</a>
-        </div>
-        <img src="img/slider_img1.jpg" alt="">
-
-        <div class="fg-content text-center">
-            <p>Buy a jute bag and avoid plastic</p>
-            <a href="#about-me" class="btn hover">
-                <i class="fa fa-angle-right" aria-hidden="true"></i> More about Charis...</a>
-        </div>
-        <img src="/img/slider_img2.jpg" alt="">
-
-        <div class="fg-content text-center">
-            <p>Hi There... I'm Charis Jute bag</p>
-            <a href="#about-me" class="btn hover">
-                <i class="fa fa-angle-right" aria-hidden="true"></i> More about Charis...</a>
-        </div>
-        <img src="/img/slider_img3.jpg" alt="">
+<div class="fg-slider" id="slider-1">
+    <div class="fg-content text-center">
+        <h2>Welcome to the world of Jute Bags.</h2>
+        
+            
     </div>
-    <script>
-        
-let FgSlider = function(fgContainer) {
-    this.fgContainer = document.querySelector(`#${fgContainer}`) || document.querySelector('.fg-slider');
-    this.setup = arguments[1];
-    this.setup && this.setup.parallax ? this.fgContainer.classList.add('fg-parallax') : false;
-    this.isParallax = this.setup && this.setup.parallax === true ? true : false;
+    <img src="img/slider_img1.jpg" alt="">
 
-    
-    this.isParallax ? this.parallaxFunc() : false;
-
-    this.sliderItems = this.fgContainer.querySelectorAll('img');
-    this.current = 0;
-    this.total = this.sliderItems.length;
-    this.createdSlides = [];
-    this.bulletArr = [];
-    this.isTrue = false;
-    this.fgTextContent = this.fgContainer.querySelectorAll('.fg-content') || null;
-    this.globalInterval = null;
-
-    
-    this.loaderCont = document.createElement('div');
-    this.loaderCont.classList.add('sk-folding-cube');
-
-    
-    this.imageItems();
-
-    
-    
-    
-    this.autoplay();
-}
-
-
-FgSlider.prototype.imageItems = function() {
-    let This = this;
-    let fgContainer = this.fgContainer;
-    fgContainer.innerHTML = '';
-
-    
-    This.loaderCont.innerHTML = '<div class="sk-cube1 sk-cube"></div><div class="sk-cube2 sk-cube"></div><div class="sk-cube4 sk-cube"></div><div class="sk-cube3 sk-cube"></div>';
-    fgContainer.appendChild(This.loaderCont);
-
-    
-    let arrowContainer = document.createElement('div')
-    arrowContainer.classList.add('arrow-container')
-
-    
-    let leftArr = document.createElement('div');
-    arrowContainer.appendChild(leftArr);
-    leftArr.classList.add('left-arrow');
-    leftArr.innerHTML = '<i class="fa fa-angle-left" aria-hidden="true"></i>';
-
-    
-    let rightArr = document.createElement('div');
-    arrowContainer.appendChild(rightArr);
-    rightArr.classList.add('right-arrow');
-    rightArr.innerHTML = '<i class="fa fa-angle-right" aria-hidden="true"></i>';
-    
-    fgContainer.appendChild(arrowContainer);
-
-    
-    let bulletContainer = document.createElement('div');
-    bulletContainer.classList.add('bullet-container');
-    fgContainer.appendChild(bulletContainer);
-    
-    
-    
-    for (let i = 0; i < This.sliderItems.length; i++) {
-        
-        let slides = document.createElement('div');
-        if (This.fgTextContent[i]) {
-            slides.appendChild(This.fgTextContent[i])
-        }
-        
-        slides.classList.add('slider-item');
-        slides.style.background = `url(${This.sliderItems[i].src}) no-repeat`;
-        slides.style.backgroundSize = 'cover';
-        slides.style.backgroundPosition = 'center center';
-        fgContainer.appendChild(slides);
-        This.createdSlides.push(slides);
-        
-        
-        if (This.setup.bullets) {
-            let bullets = document.createElement('div');
-            bullets.setAttribute('slide-index', i);
-            bulletContainer.appendChild(bullets);
-            This.bulletArr.push(bullets);
+    <div class="fg-content text-center">
+        <h2>Charis Jute bags</h2>
         
             
-            bullets.addEventListener('click', function() {
-                
-                This.current = parseInt(this.getAttribute('slide-index'));
-                
-                let bulletIndex = parseInt(this.getAttribute('slide-index'));
-                This.clearInterval(This.globalInterval);
-                This.slide(bulletIndex);
-                This.autoplay();
-            });
-        }
-    }; 
+    </div>
+    <img src="/img/slider_img2.jpg" alt="">
 
-    
-    
-    rightArr.addEventListener('click', function() {
-        This.clearInterval(This.globalInterval);
-        This.nextFunc();
-        This.autoplay();
-
-    });
-    leftArr.addEventListener('click', function() {
-        This.clearInterval(This.globalInterval);
-        This.prevFunc();
-        This.autoplay();
-    });
-    
-    
-    let sliderInterval = setInterval(function() {
-        This.loaderCont.classList.add('active');
-        if (fgContainer.querySelector('.slider-item')) {
-            clearInterval(sliderInterval);
-            This.loaderCont.classList.remove('active');
+    <div class="fg-content text-center">
+        <h2>Hi There... I'm Charis Jute bag</h2>
+        
             
-            
-            This.createdSlides[0].classList.add('active');
-            This.bulletArr.length ? This.bulletArr[0].classList.add('active') : false;
-        }
+    </div>
+    <img src="/img/slider_img3.jpg" alt="">
+</div>
+<script>
+    
+    let FgSlider = function (fgContainer) {
+        this.fgContainer = document.querySelector(`#${fgContainer}`) || document.querySelector('.fg-slider');
+        this.setup = arguments[1];
+        this.setup && this.setup.parallax ? this.fgContainer.classList.add('fg-parallax') : false;
+        this.isParallax = this.setup && this.setup.parallax === true ? true : false;
 
         
-        if (This.setup.effect) {
-            fgContainer.classList.add(This.setup.effect);
-        } else {
-            fgContainer.classList.add('fade');
-        }
+        this.isParallax ? this.parallaxFunc() : false;
+
+        this.sliderItems = this.fgContainer.querySelectorAll('img');
+        this.current = 0;
+        this.total = this.sliderItems.length;
+        this.createdSlides = [];
+        this.bulletArr = [];
+        this.isTrue = false;
+        this.fgTextContent = this.fgContainer.querySelectorAll('.fg-content') || null;
+        this.globalInterval = null;
 
         
-        if (This.setup.size) {
-            (This.setup.size.width) ? This.fgContainer.style.width = This.setup.size.width : false;
-            (This.setup.size.height) ? This.fgContainer.style.height = This.setup.size.height : false;
-        }
-    }, 100);
-}
+        this.loaderCont = document.createElement('div');
+        this.loaderCont.classList.add('sk-folding-cube');
 
+        
+        this.imageItems();
 
-FgSlider.prototype.autoplay = function() {
-    let This = this;
-    if (this.setup.autoplay && this.setup.autoplay === true) {
-        let sliderDuration = (this.setup.duration) ? this.setup.duration : 5000;
-        This.globalInterval = setInterval(function() {
-            This.nextFunc();
-        }, sliderDuration);
+        
+
+        
+        this.autoplay();
     }
-}
 
+    
+    FgSlider.prototype.imageItems = function () {
+        let This = this;
+        let fgContainer = this.fgContainer;
+        fgContainer.innerHTML = '';
 
-FgSlider.prototype.clearInterval = function(x) {
-    clearInterval(x);
-    this.globalInterval = 0;
-}
+        
+        This.loaderCont.innerHTML = '<div class="sk-cube1 sk-cube"></div><div class="sk-cube2 sk-cube"></div><div class="sk-cube4 sk-cube"></div><div class="sk-cube3 sk-cube"></div>';
+        fgContainer.appendChild(This.loaderCont);
 
+        
+        let arrowContainer = document.createElement('div')
+        arrowContainer.classList.add('arrow-container')
 
-FgSlider.prototype.nextFunc = function() {
-    (this.current === this.total - 1) ? this.current = 0 : this.current +=1;
-    this.slide(this.current);
-}
-FgSlider.prototype.prevFunc = function() {
-    (this.current === 0 ) ? this.current = this.total - 1 : this.current -= 1;
-    this.slide(this.current);
-}
+        
+        let leftArr = document.createElement('div');
+        arrowContainer.appendChild(leftArr);
+        leftArr.classList.add('left-arrow');
+        leftArr.innerHTML = '<i class="fa fa-angle-left" aria-hidden="true"></i>';
 
+        
+        let rightArr = document.createElement('div');
+        arrowContainer.appendChild(rightArr);
+        rightArr.classList.add('right-arrow');
+        rightArr.innerHTML = '<i class="fa fa-angle-right" aria-hidden="true"></i>';
 
-FgSlider.prototype.slide = function (index) {	
-    let This = this;
-	if (index >= 0 && index <= this.total - 1) { 
-		for (var s = 0; s <= this.total - 1; s++) {
-			if (s === index) {
-                this.createdSlides[s].classList.add('active'); 
-                this.bulletArr.length ? this.bulletArr[s].classList.add('active') : false;
-			} else {
-                this.createdSlides[s].classList.remove('active');
-                this.bulletArr.length ? this.bulletArr[s].classList.remove('active') : false;
-                this.createdSlides[s].style.transition = 'all .7s ease';
-			}
-		}
-	}
-};
+        fgContainer.appendChild(arrowContainer);
 
+        
+        let bulletContainer = document.createElement('div');
+        bulletContainer.classList.add('bullet-container');
+        fgContainer.appendChild(bulletContainer);
 
+        
 
-FgSlider.prototype.parallaxFunc = function() {
-    let This = this;
-    let sliderHeight = parseInt(This.fgContainer.offsetHeight);
-
-    let interval = setInterval(function() {
-        if (This.createdSlides.length) {
-            clearInterval(interval);
-
-            This.createdSlides.forEach(function(items) {
-                let getUrls = items.style.backgroundImage.match(/"(.*?)"/)[1];
-                let images = new Image();
-                images.src = getUrls;
-                items.setAttribute('data-width', images.width)
-                items.setAttribute('data-height', images.height)
-                
-                let imageHeight = parseInt(images.height);
-                let sum = (imageHeight - sliderHeight) / 2;
-
-                items.style.backgroundPositionY = `-${sum}px`;
-                items.setAttribute('data-offset', `-${sum}`)
+        for (let i = 0; i < This.sliderItems.length; i++) {
             
+            let slides = document.createElement('div');
+            if (This.fgTextContent[i]) {
+                slides.appendChild(This.fgTextContent[i])
+            }
 
-                window.addEventListener('scroll', function() {
-                    let activeSlide = This.createdSlides[This.current]
-                    let pageY = window.pageYOffset;
-                    activeSlide.style.transition = 'none';
-                    let numbers = parseInt(activeSlide.getAttribute('data-offset')) + pageY / 2;
-                    This.createdSlides.forEach(function(items) {
-                        items.style.backgroundPositionY = `${numbers}px`;
-                    })
-                })
-            });
-        }
+            slides.classList.add('slider-item');
+            slides.style.background = `url(${This.sliderItems[i].src}) no-repeat`;
+            slides.style.backgroundSize = 'cover';
+            slides.style.backgroundPosition = 'center center';
+            fgContainer.appendChild(slides);
+            This.createdSlides.push(slides);
 
-    }, 100);
-}
-    </script>
-    <script>
-        new FgSlider('slider-1', {
-            autoplay: true, 
-            effect: 'slide', 
-            duration: 5000, 
-            bullets: true, 
+            
+            if (This.setup.bullets) {
+                let bullets = document.createElement('div');
+                bullets.setAttribute('slide-index', i);
+                bulletContainer.appendChild(bullets);
+                This.bulletArr.push(bullets);
+
+                
+                bullets.addEventListener('click', function () {
+                    
+                    This.current = parseInt(this.getAttribute('slide-index'));
+
+                    let bulletIndex = parseInt(this.getAttribute('slide-index'));
+                    This.clearInterval(This.globalInterval);
+                    This.slide(bulletIndex);
+                    This.autoplay();
+                });
+            }
+        }; 
+
+        
+        
+        rightArr.addEventListener('click', function () {
+            This.clearInterval(This.globalInterval);
+            This.nextFunc();
+            This.autoplay();
+
         });
-    </script>
+        leftArr.addEventListener('click', function () {
+            This.clearInterval(This.globalInterval);
+            This.prevFunc();
+            This.autoplay();
+        });
 
+        
+        let sliderInterval = setInterval(function () {
+            This.loaderCont.classList.add('active');
+            if (fgContainer.querySelector('.slider-item')) {
+                clearInterval(sliderInterval);
+                This.loaderCont.classList.remove('active');
+
+                
+                This.createdSlides[0].classList.add('active');
+                This.bulletArr.length ? This.bulletArr[0].classList.add('active') : false;
+            }
+
+            
+            if (This.setup.effect) {
+                fgContainer.classList.add(This.setup.effect);
+            } else {
+                fgContainer.classList.add('fade');
+            }
+
+            
+            if (This.setup.size) {
+                (This.setup.size.width) ? This.fgContainer.style.width = This.setup.size.width : false;
+                (This.setup.size.height) ? This.fgContainer.style.height = This.setup.size.height : false;
+            }
+        }, 100);
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    FgSlider.prototype.clearInterval = function (x) {
+        clearInterval(x);
+        this.globalInterval = 0;
+    }
+
+    
+    FgSlider.prototype.nextFunc = function () {
+        (this.current === this.total - 1) ? this.current = 0 : this.current += 1;
+        this.slide(this.current);
+    }
+    FgSlider.prototype.prevFunc = function () {
+        (this.current === 0) ? this.current = this.total - 1 : this.current -= 1;
+        this.slide(this.current);
+    }
+
+    
+    FgSlider.prototype.slide = function (index) {
+        let This = this;
+        if (index >= 0 && index <= this.total - 1) {
+            for (var s = 0; s <= this.total - 1; s++) {
+                if (s === index) {
+                    this.createdSlides[s].classList.add('active');
+                    this.bulletArr.length ? this.bulletArr[s].classList.add('active') : false;
+                } else {
+                    this.createdSlides[s].classList.remove('active');
+                    this.bulletArr.length ? this.bulletArr[s].classList.remove('active') : false;
+                    this.createdSlides[s].style.transition = 'all .7s ease';
+                }
+            }
+        }
+    };
+
+
+    
+    FgSlider.prototype.parallaxFunc = function () {
+        let This = this;
+        let sliderHeight = parseInt(This.fgContainer.offsetHeight);
+
+        let interval = setInterval(function () {
+            if (This.createdSlides.length) {
+                clearInterval(interval);
+
+                This.createdSlides.forEach(function (items) {
+                    let getUrls = items.style.backgroundImage.match(/"(.*?)"/)[1];
+                    let images = new Image();
+                    images.src = getUrls;
+                    items.setAttribute('data-width', images.width)
+                    items.setAttribute('data-height', images.height)
+
+                    let imageHeight = parseInt(images.height);
+                    let sum = (imageHeight - sliderHeight) / 2;
+
+                    items.style.backgroundPositionY = `-${sum}px`;
+                    items.setAttribute('data-offset', `-${sum}`)
+
+
+                    window.addEventListener('scroll', function () {
+                        let activeSlide = This.createdSlides[This.current]
+                        let pageY = window.pageYOffset;
+                        activeSlide.style.transition = 'none';
+                        let numbers = parseInt(activeSlide.getAttribute('data-offset')) + pageY / 2;
+                        This.createdSlides.forEach(function (items) {
+                            items.style.backgroundPositionY = `${numbers}px`;
+                        })
+                    })
+                });
+            }
+
+        }, 100);
+    }
+</script>
+<script>
+    new FgSlider('slider-1', {
+        autoplay: true, 
+        effect: 'slide', 
+        duration: 5000, 
+        bullets: true, 
+    });
+</script>
 
   <section class="products featured-products">
+    <h1 class="title_of_page">Jute bags On sale</h1>
     <div class="container flex">
       
         
@@ -451,10 +457,10 @@ FgSlider.prototype.parallaxFunc = function() {
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/be_happy_carry_bag.png" alt=""></div>
         <div class="info">
-          <h1 class="product__name title">Be Happy carry bag</h1>
+          <p class="product__name title">Be Happy carry bag</p>
           <h3 class="product__description">A portable jute carry bag for shopping</h3>
             <div class="product__price MRP">
-              <h2>₹ 499/-</h2>
+              <h4>₹ 499/-</h4>
               
             </div>
             <div class="icon">
@@ -468,15 +474,38 @@ FgSlider.prototype.parallaxFunc = function() {
                 </a>
             
   
-            <button
-              class="snipcart-add-item buy-button snipcart-checkout"
-              data-item-id="Be_Happy_carry_bag"
-              data-item-name="Be Happy carry bag"
-              data-item-price="499"
-              data-item-url=""
-              data-item-description="A portable jute carry bag for shopping">
-              Buy now
-            </button>
+            
+            </div>
+        </div>
+    </div>
+  </div>
+
+      
+        
+
+
+  <div class="product">
+    <div class="product__box card">
+      <div class="bags"><img class="product__image" src="/uploads/Gents_hand_bag.png" alt=""></div>
+        <div class="info">
+          <p class="product__name title">Gents hand bag</p>
+          <h3 class="product__description">A portable jute hand bag for men</h3>
+            <div class="product__price MRP">
+              <h4>₹ 599/-</h4>
+              
+            </div>
+            <div class="icon">
+                <a href="#" class="snipcart-add-item"               
+                  data-item-id="Gents_hand_bag"
+                  data-item-name="Gents hand bag"
+                  data-item-price="599"
+                  data-item-url=""
+                  data-item-description="A portable jute hand bag for men">
+                  <img src="images/manav/cart.png" alt="cart">
+                </a>
+            
+  
+            
             </div>
         </div>
     </div>
@@ -490,10 +519,10 @@ FgSlider.prototype.parallaxFunc = function() {
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/gift-_giveaway_bag.png" alt=""></div>
         <div class="info">
-          <h1 class="product__name title">Gift giveaway bag</h1>
-          <h3 class="product__description"></h3>
+          <p class="product__name title">Gift giveaway bag</p>
+          <h3 class="product__description">A thoughtful gift bag for giveaway</h3>
             <div class="product__price MRP">
-              <h2>₹ 599/-</h2>
+              <h4>₹ 599/-</h4>
               
             </div>
             <div class="icon">
@@ -502,20 +531,74 @@ FgSlider.prototype.parallaxFunc = function() {
                   data-item-name="Gift giveaway bag"
                   data-item-price="599"
                   data-item-url=""
-                  data-item-description="">
+                  data-item-description="A thoughtful gift bag for giveaway">
                   <img src="images/manav/cart.png" alt="cart">
                 </a>
             
   
-            <button
-              class="snipcart-add-item buy-button snipcart-checkout"
-              data-item-id="gift_giveaway_bag"
-              data-item-name="Gift giveaway bag"
-              data-item-price="599"
-              data-item-url=""
-              data-item-description="">
-              Buy now
-            </button>
+            
+            </div>
+        </div>
+    </div>
+  </div>
+
+      
+        
+
+
+  <div class="product">
+    <div class="product__box card">
+      <div class="bags"><img class="product__image" src="/uploads/Jute_file.png" alt=""></div>
+        <div class="info">
+          <p class="product__name title">Jute file</p>
+          <h3 class="product__description">A jute file for organizing documents</h3>
+            <div class="product__price MRP">
+              <h4>₹ 299/-</h4>
+              
+            </div>
+            <div class="icon">
+                <a href="#" class="snipcart-add-item"               
+                  data-item-id="Jute_file"
+                  data-item-name="Jute file"
+                  data-item-price="299"
+                  data-item-url=""
+                  data-item-description="A jute file for organizing documents">
+                  <img src="images/manav/cart.png" alt="cart">
+                </a>
+            
+  
+            
+            </div>
+        </div>
+    </div>
+  </div>
+
+      
+        
+
+
+  <div class="product">
+    <div class="product__box card">
+      <div class="bags"><img class="product__image" src="/uploads/Jute_Hand_bag.png" alt=""></div>
+        <div class="info">
+          <p class="product__name title">Jute Hand bag</p>
+          <h3 class="product__description">A jute hand and side bag for everyone</h3>
+            <div class="product__price MRP">
+              <h4>₹ 599/-</h4>
+              
+            </div>
+            <div class="icon">
+                <a href="#" class="snipcart-add-item"               
+                  data-item-id="Jute_Hand_bag"
+                  data-item-name="Jute Hand bag"
+                  data-item-price="599"
+                  data-item-url=""
+                  data-item-description="A jute hand and side bag for everyone">
+                  <img src="images/manav/cart.png" alt="cart">
+                </a>
+            
+  
+            
             </div>
         </div>
     </div>
@@ -529,10 +612,10 @@ FgSlider.prototype.parallaxFunc = function() {
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/jute_purse.png" alt=""></div>
         <div class="info">
-          <h1 class="product__name title">Jute purse</h1>
+          <p class="product__name title">Jute purse</p>
           <h3 class="product__description">A classy jute purse for woman</h3>
             <div class="product__price MRP">
-              <h2>₹ 599/-</h2>
+              <h4>₹ 599/-</h4>
               
             </div>
             <div class="icon">
@@ -546,15 +629,7 @@ FgSlider.prototype.parallaxFunc = function() {
                 </a>
             
   
-            <button
-              class="snipcart-add-item buy-button snipcart-checkout"
-              data-item-id="jute_purse"
-              data-item-name="Jute purse"
-              data-item-price="599"
-              data-item-url=""
-              data-item-description="A classy jute purse for woman">
-              Buy now
-            </button>
+            
             </div>
         </div>
     </div>
@@ -568,10 +643,10 @@ FgSlider.prototype.parallaxFunc = function() {
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/jute_school_bag.png" alt=""></div>
         <div class="info">
-          <h1 class="product__name title">Jute School bag</h1>
+          <p class="product__name title">Jute School bag</p>
           <h3 class="product__description">A portable backpack for students</h3>
             <div class="product__price MRP">
-              <h2>₹ 899/-</h2>
+              <h4>₹ 899/-</h4>
               
             </div>
             <div class="icon">
@@ -585,15 +660,7 @@ FgSlider.prototype.parallaxFunc = function() {
                 </a>
             
   
-            <button
-              class="snipcart-add-item buy-button snipcart-checkout"
-              data-item-id="Jute_School_bag"
-              data-item-name="Jute School bag"
-              data-item-price="899"
-              data-item-url=""
-              data-item-description="A portable backpack for students">
-              Buy now
-            </button>
+            
             </div>
         </div>
     </div>
@@ -607,10 +674,10 @@ FgSlider.prototype.parallaxFunc = function() {
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/Jute_Small_Travel_bag.png" alt=""></div>
         <div class="info">
-          <h1 class="product__name title">Jute Small Travel bag</h1>
+          <p class="product__name title">Jute Small Travel bag</p>
           <h3 class="product__description">A portable jute bag for travelling</h3>
             <div class="product__price MRP">
-              <h2>₹ 699/-</h2>
+              <h4>₹ 699/-</h4>
               
             </div>
             <div class="icon">
@@ -624,15 +691,38 @@ FgSlider.prototype.parallaxFunc = function() {
                 </a>
             
   
-            <button
-              class="snipcart-add-item buy-button snipcart-checkout"
-              data-item-id="Jute_Small_Travel_bag"
-              data-item-name="Jute Small Travel bag"
-              data-item-price="699"
-              data-item-url=""
-              data-item-description="A portable jute bag for travelling">
-              Buy now
-            </button>
+            
+            </div>
+        </div>
+    </div>
+  </div>
+
+      
+        
+
+
+  <div class="product">
+    <div class="product__box card">
+      <div class="bags"><img class="product__image" src="/uploads/shopping_jute_bag.png" alt=""></div>
+        <div class="info">
+          <p class="product__name title">Shopping Jute bag</p>
+          <h3 class="product__description">A portable jute carry bag for shopping</h3>
+            <div class="product__price MRP">
+              <h4>₹ 499/-</h4>
+              
+            </div>
+            <div class="icon">
+                <a href="#" class="snipcart-add-item"               
+                  data-item-id="Shopping_Jute_bag"
+                  data-item-name="Shopping Jute bag"
+                  data-item-price="499"
+                  data-item-url=""
+                  data-item-description="A portable jute carry bag for shopping">
+                  <img src="images/manav/cart.png" alt="cart">
+                </a>
+            
+  
+            
             </div>
         </div>
     </div>
@@ -646,10 +736,10 @@ FgSlider.prototype.parallaxFunc = function() {
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/women___style.png" alt=""></div>
         <div class="info">
-          <h1 class="product__name title">Women Style</h1>
+          <p class="product__name title">Women Style</p>
           <h3 class="product__description">A classy jute purse for woman</h3>
             <div class="product__price MRP">
-              <h2>₹ 599/-</h2>
+              <h4>₹ 599/-</h4>
               
             </div>
             <div class="icon">
@@ -663,15 +753,7 @@ FgSlider.prototype.parallaxFunc = function() {
                 </a>
             
   
-            <button
-              class="snipcart-add-item buy-button snipcart-checkout"
-              data-item-id="Women___Style"
-              data-item-name="Women Style"
-              data-item-price="599"
-              data-item-url=""
-              data-item-description="A classy jute purse for woman">
-              Buy now
-            </button>
+            
             </div>
         </div>
     </div>
@@ -701,6 +783,44 @@ FgSlider.prototype.parallaxFunc = function() {
             </div>
         </div>
     </section>
+
+<section class="testimonial">
+    <h1 class="title_of_page">Testimonial</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit, sequi libero explicabo nisi inventore est molestias cupiditate beatae obcaecati, aut hic maxime eaque quia voluptates nobis consequuntur eum deserunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit, sequi libero explicabo nisi inventore est molestias cupiditate beatae obcaecati, aut hic maxime eaque quia voluptates nobis consequuntur eum deserunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit, sequi libero explicabo nisi inventore est molestias cupiditate beatae obcaecati, aut hic maxime eaque quia voluptates nobis consequuntur eum deserunt?</p>
+    <div class="custom-shape-divider-top-1629810671">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+<style>
+    .testimonial{
+        background-color: #9b8055;
+        padding: 20% 5% 5%;
+    }
+    .custom-shape-divider-top-1629810671 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1629810671 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1629810671 .shape-fill {
+    fill: #FFFFFF;
+}
+</style>
 
 
 
