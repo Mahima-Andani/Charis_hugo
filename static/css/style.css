@@ -82,6 +82,10 @@ header .container{
 .vector-1{
   padding-inline: 15px;
 }
+.vector-1 svg{
+  width: 30px;
+  aspect-ratio: 1;
+}
 .nav_icons a {
   text-decoration: none;
   color: #9b8055;
@@ -374,26 +378,29 @@ header .container{
 
 /* SLIDER TEXT CONTENT */
 .slider-item .fg-content {
+  background: rgba( 53, 44, 28, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+border-radius: 10px;
   position: absolute;
-  left: 50%;
-  top: 48%;
+  top: 10%;
   z-index: 9;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  background: #00000082;
-  padding: 1em;
-  opacity: .4;
   border-radius: 10px;
+  right: 5%;
+  transform: translate(-5%, -10%);
+  padding: 2em;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  max-width: 20rem;
 }
 .slider-item.active .fg-content {
-  top: 50%;
+  top: 20%;
   opacity: 1;
   visibility: visible;
-  -webkit-transition-delay: .7s;
           transition-delay: .7s;
 }
 
