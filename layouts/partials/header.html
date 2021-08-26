@@ -20,6 +20,7 @@
             <a href="#" class="logo">
                 <img src="/images/Charish-logo.png" alt="Charis">
             </a>
+            
             <nav class="flex">
                 <!-- main nav-->
                 <ul class="nav_list flex">
@@ -30,23 +31,28 @@
                             <li><a href="#" class="menu-item">Travel bags</a></li>
                             <li class="dropdown dropdown-right">
                                 <a href="#" class="menu-item">
-                                    Hand bags
+                                    Special bags
                                   <i class="fas fa-angle-right"></i>
                                 </a>
                                 <ul class="menu-right expandable">
-                                  <li><a href="#" class="menu-item">Item 3.1</a></li>
-                                  <li><a href="#" class="menu-item">Item 3.2</a></li>
-                                  <li><a href="#" class="menu-item">Item 3.3</a></li>
-                                  <li><a href="#" class="menu-item">Item 3.4</a></li>
+                                  <li><a href="#" class="menu-item">Office Bag</a></li>
+                                  <li><a href="#" class="menu-item">Hand Bag</a></li>
+                                  <li><a href="#" class="menu-item">Gift Bag</a></li>
+                                  <li><a href="#" class="menu-item">School Bag</a></li>
+                                  <li><a href="#" class="menu-item">Travel Bag</a></li>
+                                  <li><a href="#" class="menu-item">Customised Bag</a></li>
+                                  
+
                                 </ul>
                               </li>
                             <li><a href="#" class="menu-item">Office bags</a></li>
-                            <li><a href="#" class="menu-item">Women's special bags</a></li>
+
                         </ul>
                     </li>
                     <li class="nav_item"><a class="nav_link" href="#">About us</a></li>
                     <li class="nav_item"><a class="nav_link" href="#">All products</a></li>
                     <li class="nav_item"><a class="nav_link" href="#">Contact us</a></li>
+
                 </ul>
                 <style>
                     .nav_item {
@@ -102,11 +108,12 @@
                 <div class="nav_icons flex">
                     <!-- user login and signup dropdown along with popup -->
                     <div class="nav_dropdown">
+                        <!-- Vector-2 -->
                         <div>
                             <a href="#">
-                            <img src="/images/Vector-2.png" alt="user">
-                            <span class="login-span">Login</span>
-                        </a>
+                                <img src="/images/Vector-2.png" alt="user">
+                                <span class="login-span">Login</span>
+                            </a>
                         </div>
                         <div class="dropdown-menu">
                             <a href="javascript:void(0)" id="show-login">Login</a>
@@ -115,11 +122,13 @@
                             <a href="#">Your Profile </a>
                         </div>
                     </div>
+                    <!-- vector-1 -->
                     <div class="vector-1">
                         <a href="tel:0000000000">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
                         </a>
                     </div>
+                    <!-- vector-3 -->
                     <div class="vector-3 snipcart-checkout">
                         <a href="#">
                             <img src="/images/Vector-3.png" alt="cart">
@@ -221,6 +230,66 @@
                 </div>
             </div>
         </div>
+        <style>
+            .nav_item {
+               position: relative;
+            }
+            .nav_item:hover .dropdown-menu2 {
+             top: 34px;
+             opacity: 1;
+             visibility: visible;
+            }
+            .dropdown-menu2,
+            .menu-right{
+            position: absolute;
+            background: #F8F5F2;
+            width: 100%;
+            /* top: 10vh; */
+            margin-top: 15px;
+            z-index: 2;
+
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            list-style: none;
+            width: 9rem;
+             }
+            .dropdown-menu2 li a{
+                color: #9b8055;
+                padding: 13%;
+                justify-content: center;
+
+            }
+            .dropdown-menu2 li a:hover{
+                background-color: #9b8055;
+                color:  #F8F5F2;
+            }
+            .menu-right {
+                top: 0;
+                left: 110%;
+            }
+            .menu-item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            }
+            .dropdown:hover .dropdown-menu {
+                top: 34px;
+                opacity: 1;
+                visibility: visible;
+            }
+            .dropdown-right:hover .menu-right {
+              left: 100%;
+              opacity: 1;
+              visibility: visible;
+            }
+            @media only screen and (min-width: 768px){
+                .dropdown-menu2,
+            .menu-right{
+                z-index: -2;
+            }
+        </style>
         <script>
         //login form popup on vector-2 img
             document.querySelector("#show-login").addEventListener("click",function(){
