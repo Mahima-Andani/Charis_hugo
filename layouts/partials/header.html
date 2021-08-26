@@ -20,22 +20,50 @@
             <a href="#" class="logo">
                 <img src="/images/Charish-logo.png" alt="Charis">
             </a>
+            
             <nav class="flex">
                 <!-- main nav-->
                 <ul class="nav_list flex">
-                    <li class="nav_item"><a class="nav_link" href="#">Jute Bags</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">Gifts</a></li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link menu-item">Jute Bags</a>
+                        <ul class="dropdown-menu2 expandable">
+                            <li><a href="#" class="menu-item">Shopping bags</a></li>
+                            <li><a href="#" class="menu-item">Travel bags</a></li>
+                            <li class="dropdown dropdown-right">
+                                <a href="#" class="menu-item">
+                                    Special bags
+                                  <i class="fas fa-angle-right"></i>
+                                </a>
+                                <ul class="menu-right expandable">
+                                  <li><a href="#" class="menu-item">Office Bag</a></li>
+                                  <li><a href="#" class="menu-item">Hand Bag</a></li>
+                                  <li><a href="#" class="menu-item">Gift Bag</a></li>
+                                  <li><a href="#" class="menu-item">School Bag</a></li>
+                                  <li><a href="#" class="menu-item">Travel Bag</a></li>
+                                  <li><a href="#" class="menu-item">Customised Bag</a></li>
+                                  
+
+                                </ul>
+                              </li>
+                            <li><a href="#" class="menu-item">Office bags</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a class="nav_link" href="#">About us</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#">All products</a></li>
                     <li class="nav_item"><a class="nav_link" href="#">Contact us</a></li>
+
                 </ul>
                 <!-- nav icons -->
                 <div class="nav_icons flex">
                     <!-- user login and signup dropdown along with popup -->
                     <div class="nav_dropdown">
+                        <!-- Vector-2 -->
                         <div>
                             <a href="#">
-                            <img src="/images/Vector-2.png" alt="user">
-                            <span class="login-span">Login</span>
-                        </a>
+                                <img src="/images/Vector-2.png" alt="user">
+                                <span class="login-span">Login</span>
+                            </a>
                         </div>
                         <div class="dropdown-menu">
                             <a href="javascript:void(0)" id="show-login">Login</a>
@@ -44,11 +72,13 @@
                             <a href="#">Your Profile </a>
                         </div>
                     </div>
+                    <!-- vector-1 -->
                     <div class="vector-1">
                         <a href="#">
                             <img src="/images/Vector-1.png" alt="contact">
                         </a>
                     </div>
+                    <!-- vector-3 -->
                     <div class="vector-3 snipcart-checkout">
                         <a href="#">
                             <img src="/images/Vector-3.png" alt="cart">
@@ -150,6 +180,62 @@
                 </div>
             </div>
         </div>
+        <style>
+            .nav_item {
+               position: relative;
+            }
+            .nav_item:hover .dropdown-menu2 {
+             top: 34px;
+             opacity: 1;
+             visibility: visible;
+            }
+            .dropdown-menu2,
+            .menu-right{
+            position: absolute;
+            background: #F8F5F2;
+            width: 100%;
+            top: 50px;
+            /* this could be the reason for issue */
+            margin-top: 52px;
+
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            list-style: none;
+            width: 9rem;
+             }
+            .dropdown-menu2 li a{
+                color: #9b8055;
+                padding: 13%;
+                justify-content: center;
+
+            }
+            .dropdown-menu2 li a:hover{
+                background-color: #9b8055;
+                color:  #F8F5F2;
+            }
+            .menu-right {
+                top: 0;
+                left: 110%;
+            }
+            .menu-item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            }
+            .dropdown:hover .dropdown-menu {
+                top: 34px;
+                opacity: 1;
+                visibility: visible;
+            }
+            .dropdown-right:hover .menu-right {
+              left: 100%;
+              opacity: 1;
+              visibility: visible;
+            }
+        
+        </style>
         <script>
         //login form popup on vector-2 img
             document.querySelector("#show-login").addEventListener("click",function(){
