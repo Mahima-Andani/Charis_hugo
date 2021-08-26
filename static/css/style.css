@@ -16,6 +16,11 @@ img{
 a{
   text-decoration: none !important;
 }
+.container{
+  width: min(85em, 88%);
+  margin: 0 auto;
+  position: relative;
+}
 .title_of_page{
   text-align: left;
   margin-inline: 5%;
@@ -31,8 +36,9 @@ a{
 .flex{
   display: flex;
   align-items: center;
-  justify-content: center;
 }
+
+
 section {
   position: relative;
   width: 100%;
@@ -40,32 +46,168 @@ section {
   /* padding: 4rem; */
   overflow-x: hidden;
 }
-
+/* navbar */
 header{
+  background: #F8F5F2;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
+  padding-block: 1em;
 }
-header .container{
-  background: #F8F5F2;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  /* position: fixed; */
+/* changes */
+/* CHECK IF IT IS DRY CODE */
+nav {
   width: 100%;
-  padding: 1% 4%;
-  justify-content: unset;
-  z-index: 3;
 }
 
+
+.nav_icons {
+  position: absolute;
+  right: 55px;
+  /* margin-inline: auto; */
+  gap: 1em;
+}
+
+.svg-inline--fa {
+  width: 25px;
+  aspect-ratio: 1;
+}
+
+
+.icon span ,.mob-hide {
+  display: none;
+}
+
+@media(min-width:991px){
+  .icon span ,.mob-hide{
+    display: inline-block;
+  }
+/* DRY CODE */
+}
+
+
+
+/* CHANGE 2 */
+/* COPIED FROM HEADER.HTML */
+/* CHECK IF IT IS DRY */
+.nav_item {
+    margin-block:1em;
+    position: relative;
+}
+.nav_item:hover .dropdown-menu2 {
+top: 34px;
+opacity: 1;
+visibility: visible;
+}
+.dropdown-menu2,
+.menu-right{
+position: absolute;
+background: #F8F5F2;
+width: 100%;
+/* top: 10vh; */
+margin-top: 15px;
+z-index: 2;
+
+left: 0;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease;
+list-style: none;
+width: 9rem;
+}
+.dropdown-menu2 li a{
+   color: #9b8055;
+   padding: 13%;
+   justify-content: center;
+
+}
+.dropdown-menu2 li a:hover{
+   background-color: #9b8055;
+   color:  #F8F5F2;
+}
+.menu-right {
+   top: 0;
+   left: 110%;
+}
+.menu-item {
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+   top: 34px;
+   opacity: 1;
+   visibility: visible;
+}
+.dropdown-right:hover .menu-right {
+ left: 100%;
+ opacity: 1;
+ visibility: visible;
+}
+@media only screen and (min-width: 768px){
+   .dropdown-menu2,
+.menu-right{
+   z-index: -2;
+}
+
+}
+
+
+/* change 3 from header */
+
+
+.dropdown-menu2,
+.menu-right{
+position: absolute;
+background: beige;
+width: 100%;
+top: 50px;
+left: 0;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease;
+list-style: none;
+width: 9rem;
+}
+.dropdown-menu2 li a{
+   color: peru;
+   padding: 10%;
+}
+.dropdown-menu2 li a:hover{
+   background-color: chocolate;
+   color: beige;
+}
+.menu-right {
+   top: 0;
+   left: 110%;
+}
+.menu-item {
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+   top: 34px;
+   opacity: 1;
+   visibility: visible;
+}
+.dropdown-right:hover .menu-right {
+ left: 100%;
+ opacity: 1;
+ visibility: visible;
+}
+
+/* COPIED FROM HEADER.HTML */
+
+/* changes */
 .nav_list {
   justify-content: space-around;
   width: 35vw;
   /* border: 2px solid; */
 }
-.nav_icons{
-  position: absolute;
-  right: 55px;
-}
+
 .nav_icons img{
   display: unset;
 }
@@ -99,12 +241,6 @@ header .container{
   display: none;
 }
 
-/* .vector-2 li a img, .vector-3 a img{
-  height: 0%;
-}
-.vector-2 li a span, .vector-3 a span{
-  margin-left: 10px;
-} */
 
 /* login and signup form popup on vector-2 img */
 
@@ -244,17 +380,12 @@ header .container{
 } */
 
 @media only screen and (max-width: 768px) {
-  header .container{  
-    height: 9vh;
-  }
+
 
   .login-span, .vector-3 a span{
     display: none;
   }
-  /* .vector-2:hover .dropdown-menu{
-    display: block;
-    background-color: #fff;
-  } */
+
   .nav__toggle {
     display: block;
     position: absolute;
@@ -301,10 +432,7 @@ header .container{
     top: 9vh;
     transition: all 400ms ease;
   }
-  .nav_item {
-    margin-block:1em
-   
-  }
+
   .nav_link {
     /* font-size: 1.2em; */
     /* margin: 5px 0; */
@@ -314,26 +442,7 @@ header .container{
     /* background-color: #9b805590; */
     /* color: #fff; */
   }
-  /* 
-  .hamburger,
-  .hamburger::before,
-  .hamburger::after {
-    display: block;
-    background: #9b8055;
-    height: 3px;
-    margin: 0 auto;
-  }
-  .hamburger::before,
-  .hamburger::after {
-    content: "";
-  }
-  .hamburger::before {
-    transform: translateY(-6px);
-  }
-  .hamburger::after {
-    transform: translateY(3px);
-  }
-*/
+ 
   .bar1, .bar2, .bar3 {
     display: block;
     background: #9b8055;
@@ -354,6 +463,8 @@ header .container{
   }
 
 }
+
+/* navbar */
 
 /* Carousel */
 /* SLIDER MAIN CONTAINER */
@@ -708,9 +819,6 @@ border-radius: 10px;
   }
 }
 /* Carousel ends */
-
-/* Manav cards */
-
 
 
 /* Muskan about us */
