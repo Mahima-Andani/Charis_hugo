@@ -1,25 +1,3 @@
-// navbar mahima 
-// Hamburger menu
-let menuToggle = document.querySelector('.nav__toggle');
-let navigation = document.querySelector('.nav_list');
-
-menuToggle.onclick = function () {
-    // menuToggle.classList.toggle('active')
-    navigation.classList.toggle('active')
-}
-
-//show nav on scroll
-// let showNav = document.querySelector('nav')
-
-// window.onscroll = function() {
-//   if (document.body.scrollTop || document.documentElement.scrollTop ) {
-//     showNav.style.visibility = "visible";
-//     showNav.style.opacity = 1;
-//   } else {
-//     showNav.style.visibility = "hidden";
-//     showNav.style.opacity = 0;
-//   }
-// }
 
 //login form popup on vector-2 img
 document.querySelector("#show-login").addEventListener("click",function(){
