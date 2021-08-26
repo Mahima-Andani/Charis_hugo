@@ -17,10 +17,37 @@
     
     <item>
       <title></title>
+      <link>/products/gents_hand_bag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/gents_hand_bag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/products/gift_giveaway_bag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/products/gift_giveaway_bag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/products/jute_file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/jute_file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/products/jute_hand_bag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/jute_hand_bag/</guid>
       <description></description>
     </item>
     
@@ -39,6 +66,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/products/jute_school_bag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/products/jute_small_travel_bag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/jute_small_travel_bag/</guid>
       <description></description>
     </item>
     
