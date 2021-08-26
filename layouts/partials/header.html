@@ -244,9 +244,9 @@
             position: absolute;
             background: #F8F5F2;
             width: 100%;
-            top: 50px;
-            /* this could be the reason for issue */
-            margin-top: 52px;
+            /* top: 10vh; */
+            margin-top: 15px;
+            z-index: 2;
 
             left: 0;
             opacity: 0;
@@ -284,7 +284,11 @@
               opacity: 1;
               visibility: visible;
             }
-        
+            @media only screen and (min-width: 768px){
+                .dropdown-menu2,
+            .menu-right{
+                z-index: -2;
+            }
         </style>
         <script>
         //login form popup on vector-2 img

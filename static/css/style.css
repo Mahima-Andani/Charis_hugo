@@ -114,11 +114,14 @@ header .container{
   background-color: beige;
   min-width: 158px;
   z-index: 1;
+  /* top: 50px; */
+  left: 0;
+  /* transition: all 0.3s ease; */
 }
 
 .dropdown-menu a{
   text-decoration: none;
-  color: peru;
+  color: #9b8055;
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -128,7 +131,7 @@ header .container{
   background-color: #fff;
 }
 .dropdown-menu a:hover{
-  background-color: chocolate;
+  background-color: #9b8055;
   color: beige;
 }
 .popup, .popup2{
