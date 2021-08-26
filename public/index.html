@@ -21,23 +21,52 @@
             <a href="#" class="logo">
                 <img src="/images/Charish-logo.png" alt="Charis">
             </a>
+            
             <nav class="flex">
                 
                 <ul class="nav_list flex">
-                    <li class="nav_item"><a class="nav_link" href="#">Jute Bags</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">Gifts</a></li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link menu-item">Jute Bags</a>
+                        <ul class="dropdown-menu2 expandable">
+                            <li><a href="#" class="menu-item">Shopping bags</a></li>
+                            <li><a href="#" class="menu-item">Travel bags</a></li>
+                            <li class="dropdown dropdown-right">
+                                <a href="#" class="menu-item">
+                                    Special bags
+                                  <i class="fas fa-angle-right"></i>
+                                </a>
+                                <ul class="menu-right expandable">
+                                  <li><a href="#" class="menu-item">Office Bag</a></li>
+                                  <li><a href="#" class="menu-item">Hand Bag</a></li>
+                                  <li><a href="#" class="menu-item">Gift Bag</a></li>
+                                  <li><a href="#" class="menu-item">School Bag</a></li>
+                                  <li><a href="#" class="menu-item">Travel Bag</a></li>
+                                  <li><a href="#" class="menu-item">Customised Bag</a></li>
+                                  
+
+                                </ul>
+                              </li>
+                            <li><a href="#" class="menu-item">Office bags</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a class="nav_link" href="#">About us</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#">All products</a></li>
                     <li class="nav_item"><a class="nav_link" href="#">Contact us</a></li>
+
                 </ul>
+                
                 
                 <div class="nav_icons flex">
                     
                     <div class="nav_dropdown">
-                        <div>
+                        
+                        
                             <a href="#">
-                            <img src="/images/Vector-2.png" alt="user">
-                            <span class="login-span">Login</span>
-                        </a>
-                        </div>
+                                <img src="/images/Vector-2.png" alt="user">
+                                <span class="login-span">Login</span>
+                            </a>
+                        
                         <div class="dropdown-menu">
                             <a href="javascript:void(0)" id="show-login">Login</a>
                             <a href="#">Wishlist</a>
@@ -45,11 +74,13 @@
                             <a href="#">Your Profile </a>
                         </div>
                     </div>
+                    
                     <div class="vector-1">
-                        <a href="#">
+                        <a href="tel:0000000000">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>
                         </a>
                     </div>
+                    
                     <div class="vector-3 snipcart-checkout">
                         <a href="#">
                             <img src="/images/Vector-3.png" alt="cart">
@@ -83,93 +114,71 @@
         </div>
     </header>
         
-        <div class="popup">
-            <div class="close-btn">×</div>
-            <div class="form">
-                <h2>Log in</h2>
-                <div class="form-element">
-                    <label for="email">Email</label>
-                    <input type="text" placeholder="Enter your email">
-                </div>
-                <div class="form-element">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter your password">
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" id="remember-me">
-                    <label for="remember-me">Remember-me</label>
-                </div>
-                <div class="form-element">
-                    <button>Sign in</button>
-                </div>
-                <div class="form-element">
-                    <a href="#">Forgot Password</a>
-                </div>
-                <div class="form-element">
-                    <a href="#" id="show-register">
-                        <span> 
-                            new user? 
-                        </span> 
-                        Register
-                    </a>
-                </div>
-            </div>
-        </div> 
-        <div class="popup2">
-            <div class="close-btn2">×</div>
-            <div class="form">
-                <h2>sign up</h2>
-                <div class="form-element">
-                    <label for="phone number">Phone Number</label>
-                    <input type="text" placeholder="Enter your phone number">
-                </div>
-                <div class="form-element">
-                    <label for="email">Email</label>
-                    <input type="text" placeholder="Enter your email">
-                </div>
-                <div class="form-element">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter your password">
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" id="remember-me">
-                    <label for="remember-me">Remember-me</label>
-                </div>
-                <div class="form-element">
-                    <button>Sign up</button>
-                </div>
-                
-                <div class="form-element">
-                    <a id="login-reappear" href="#">
-                        <span>
-                            Existing user? 
-                        </span>
-                        Login
-                    </a>
-                </div>
-            </div>
-        </div>
-        <script>
         
-            document.querySelector("#show-login").addEventListener("click",function(){
-                document.querySelector(".popup").classList.toggle("active");
-                document.querySelector(".dropdown-menu").style.opacity = 0;
-                });
-            document.querySelector(".popup .close-btn").addEventListener("click",function(){
-                document.querySelector(".popup").classList.remove("active");
-                document.querySelector(".dropdown-menu").style.opacity = 1;
-                });
         
-            document.querySelector("#show-register").addEventListener("click",function(){
-                document.querySelector(".popup2").classList.toggle("active2");
-                });
-                document.querySelector(".popup2 .close-btn2").addEventListener("click",function(){
-                document.querySelector(".popup2").classList.remove("active2");
-                });
-                document.getElementById("login-reappear").addEventListener("click", function(){
-                  document.querySelector('.popup2.active2').classList.remove("active2");
-                })
-        </script>
+                 
+        <style>
+            .nav_item {
+               position: relative;
+            }
+            .nav_item:hover .dropdown-menu2 {
+             top: 34px;
+             opacity: 1;
+             visibility: visible;
+            }
+            .dropdown-menu2,
+            .menu-right{
+            position: absolute;
+            background: #F8F5F2;
+            width: 100%;
+             
+            margin-top: 15px;
+            z-index: 2;
+
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            list-style: none;
+            width: 9rem;
+             }
+            .dropdown-menu2 li a{
+                color: #9b8055;
+                padding: 13%;
+                justify-content: center;
+
+            }
+            .dropdown-menu2 li a:hover{
+                background-color: #9b8055;
+                color:  #F8F5F2;
+            }
+            .menu-right {
+                top: 0;
+                left: 110%;
+            }
+            .menu-item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            }
+            .dropdown:hover .dropdown-menu {
+                top: 34px;
+                opacity: 1;
+                visibility: visible;
+            }
+            .dropdown-right:hover .menu-right {
+              left: 100%;
+              opacity: 1;
+              visibility: visible;
+            }
+            @media only screen and (min-width: 768px){
+                .dropdown-menu2,
+            .menu-right{
+                z-index: -2;
+            }
+        }
+        </style>
+        
 
 
 
@@ -456,7 +465,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/be_happy_carry_bag.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Be Happy carry bag</p>
           <h3 class="product__description">A portable jute carry bag for shopping</h3>
             <div class="product__price MRP">
@@ -470,15 +480,174 @@
                   data-item-price="499"
                   data-item-url=""
                   data-item-description="A portable jute carry bag for shopping">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -487,7 +656,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/Gents_hand_bag.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Gents hand bag</p>
           <h3 class="product__description">A portable jute hand bag for men</h3>
             <div class="product__price MRP">
@@ -501,15 +671,174 @@
                   data-item-price="599"
                   data-item-url=""
                   data-item-description="A portable jute hand bag for men">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -518,7 +847,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/gift-_giveaway_bag.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Gift giveaway bag</p>
           <h3 class="product__description">A thoughtful gift bag for giveaway</h3>
             <div class="product__price MRP">
@@ -532,15 +862,174 @@
                   data-item-price="599"
                   data-item-url=""
                   data-item-description="A thoughtful gift bag for giveaway">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -549,7 +1038,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/Jute_file.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Jute file</p>
           <h3 class="product__description">A jute file for organizing documents</h3>
             <div class="product__price MRP">
@@ -563,15 +1053,174 @@
                   data-item-price="299"
                   data-item-url=""
                   data-item-description="A jute file for organizing documents">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -580,7 +1229,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/Jute_Hand_bag.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Jute Hand bag</p>
           <h3 class="product__description">A jute hand and side bag for everyone</h3>
             <div class="product__price MRP">
@@ -594,15 +1244,174 @@
                   data-item-price="599"
                   data-item-url=""
                   data-item-description="A jute hand and side bag for everyone">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -611,7 +1420,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/jute_purse.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Jute purse</p>
           <h3 class="product__description">A classy jute purse for woman</h3>
             <div class="product__price MRP">
@@ -625,15 +1435,174 @@
                   data-item-price="599"
                   data-item-url=""
                   data-item-description="A classy jute purse for woman">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -642,7 +1611,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/jute_school_bag.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Jute School bag</p>
           <h3 class="product__description">A portable backpack for students</h3>
             <div class="product__price MRP">
@@ -656,15 +1626,174 @@
                   data-item-price="899"
                   data-item-url=""
                   data-item-description="A portable backpack for students">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -673,7 +1802,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/Jute_Small_Travel_bag.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Jute Small Travel bag</p>
           <h3 class="product__description">A portable jute bag for travelling</h3>
             <div class="product__price MRP">
@@ -687,15 +1817,174 @@
                   data-item-price="699"
                   data-item-url=""
                   data-item-description="A portable jute bag for travelling">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -704,7 +1993,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/shopping_jute_bag.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Shopping Jute bag</p>
           <h3 class="product__description">A portable jute carry bag for shopping</h3>
             <div class="product__price MRP">
@@ -718,15 +2008,174 @@
                   data-item-price="499"
                   data-item-url=""
                   data-item-description="A portable jute carry bag for shopping">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
         
@@ -735,7 +2184,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="/uploads/women___style.png" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">Women Style</p>
           <h3 class="product__description">A classy jute purse for woman</h3>
             <div class="product__price MRP">
@@ -749,119 +2199,310 @@
                   data-item-price="599"
                   data-item-url=""
                   data-item-description="A classy jute purse for woman">
-                  <img src="images/manav/cart.png" alt="cart">
+                  
                 </a>
             
   
             
             </div>
         </div>
-    </div>
   </div>
+  </div>
+
+<style>
+.featured-products {
+  padding-block: 5rem;
+}
+.featured-products .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.featured-products .container {
+   
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+.featured-products .card {
+  cursor: pointer;
+  transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  border-radius: 10px;
+   
+   
+  width: 7rem;
+  padding: .5rem;
+   
+}
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+   
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
+}
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+   
+  display: block;
+  
+  
+}
+
+
+
+ 
+
+.featured-products .info h3 {
+  font-size: 1rem;
+  margin-block: 0.5em;
+  color: #1b160e;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  text-align: center;
+   
+  font-size: 1.2ch;
+}
+.featured-products .info p {
+  transition: all 0.95s ease-out;
+  text-align: center;
+  color: #9b8055;
+   
+  font-size: min(1rem, 7vw);
+}
+.product__price {
+  text-align: center;
+}
+.featured-products .MRP {
+  transition: all 0.75s ease-out;
+  height: 100%;
+  align-items: center;
+}
+.featured-products .bags {
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.featured-products .bags img {
+  z-index: 2;
+  transition: all 0.75s ease-out;
+   
+   
+   
+  max-width: 100%;
+  filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+}
+.featured-products .icon {
+  transition: all 0.75s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-products .icon img {
+   
+}
+.featured-products .icon img:hover{
+   
+}
+@media (min-width: 300px){
+  .featured-products .card {
+    width: 8rem;
+  }
+}
+@media (min-width: 400px){
+  .featured-products .card {
+    width: 10rem;
+  }
+}
+@media (min-width: 500px){
+  .featured-products .container{
+    width: min(1200px, 90%);
+  }
+  .featured-products .card {
+    width: 12rem;
+  }
+  .featured-products .info h3 {
+    font-size: 1.4ch;
+  }
+  .featured-products .info p {
+      font-size: min(1.4rem, 7vw);
+  }
+}
+@media (min-width: 600px){
+  .featured-products .card {
+    width: 15rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 800px){
+  .featured-products .flex {
+    flex-wrap: nowrap;
+  }
+.featured-products .flex {
+    display: flex;
+    justify-content: space-between;
+     
+    flex-wrap: wrap;
+}
+.featured-products .container {
+    width: min(100em, 95%);
+    margin: 0 auto;
+}
+.featured-products .bags img {
+  max-width: 70%;
+}
+.featured-products .card:hover {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+}
+}
+
+</style>
 
       
     </div>
   </section>
 
 
-    
-    <section class="section-6">
-        <div class="grid-container">
-            <div class="side-img">
-                <img src="/images/aboutus2.png" alt="" class="sidebar">
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h1 class="content-title">About Charis Jute bags</h>
-                        <p>At Charis, we have been selling High quality Jute bags for personal and commercial purposes since 2020. Some of our jute bags are multipurpose shopping bags, hands bags, minimal art embedded bags, office bags, travel bags, purses, etc.</p> 
-                        <br>  
-                        <p>time to say NO to fake eco-friendly plastic bags!</p>
-                </div>
-                <div class="lower-img">
-                    <img src="/images/aboutus.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
 
+<div class="spacer layer2 flip"></div>
 <section class="testimonial">
     <h1 class="title_of_page">Testimonial</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit, sequi libero explicabo nisi inventore est molestias cupiditate beatae obcaecati, aut hic maxime eaque quia voluptates nobis consequuntur eum deserunt?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit, sequi libero explicabo nisi inventore est molestias cupiditate beatae obcaecati, aut hic maxime eaque quia voluptates nobis consequuntur eum deserunt?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit, sequi libero explicabo nisi inventore est molestias cupiditate beatae obcaecati, aut hic maxime eaque quia voluptates nobis consequuntur eum deserunt?</p>
-    <div class="custom-shape-divider-top-1629810671">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
+    <div class="testimonials">
+        <div class="container flex">
+            <div class="testimonials_card">
+                <p>
+                    I am quite picky about my bags. When my friend told me about fashion bags from Charis Bags, I didn't pay much attention. Well, it was my birthday last night, and she gave me one of those bags as a gift. I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags 
+                </p>
+                <br>
+                <p>
+                    <b>Richard Cooper</b> (Marketing Analyst)
+                </p>
+            </div>
+            <div class="testimonials_card">
+                <p>
+                    I always prefer to have unique bags. Not all fashion bags are up to my taste, but I am glad to accept that I have fallen for Charis Bags. Their customized bags are simply marvelous. It’s eco-friendly, and so trendy.I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags 
+                </p>
+                <br>
+                <p>
+                    <b>
+                    Rachel Poehler
+                    </b>(Teacher)
+                </p>
+            </div>
+            <div class="testimonials_card">
+                <p>
+                    I love my planet earth and I am going to do anything for it. I do campaigns and write journals about greener and less toxic world. Jute bags are part of my life, but the bags from the Charis Bag's made me happy, because it’s not just eco-friendly but also stylish. I can't explain how much I loved it. I thanked my friend a lot.
+                </p>
+                <p>
+                    <b>Kavita Daga</b> (Business professional)
+                </p>
+            </div>
+            
+        </div>
     </div>
+    
+    
 </section>
+</div>
+<div class="spacer layer2"></div>
 <style>
     .testimonial{
-        background-color: #9b8055;
-        padding: 20% 5% 5%;
+        background-color: #C5B396;
+        padding: 5% 5% 5%;
     }
-    .custom-shape-divider-top-1629810671 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
+    .testimonial h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         
+    }
+     
+ 
 
-.custom-shape-divider-top-1629810671 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
+.testimonials {
+    background: #C5B396;
 }
-
-.custom-shape-divider-top-1629810671 .shape-fill {
-    fill: #FFFFFF;
+.testimonials .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+         
+        padding: 5%;
+         
 }
+    .testimonials_card{
+    margin: 5%;
+    padding: 5%;
+    width: 18rem;
+     
+    aspect-ratio: 2/2.5;
+    border-radius: 50px;
+    background: #C5B396;
+    box-shadow:  20px -20px 60px #a79880,
+             -20px 20px 60px #e3cead;
+}
+@media  (min-width: 750px) {
+    .testimonial h1{
+        padding: 5%;
+    }
+     
+    .flip{
+    transform: rotate(180deg);
+    }
+ 
+    .testimonials {
+    background: #C5B396;
+    }
+    .testimonials .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-block: 5%;
+    }
+    .testimonials_card{
+    margin: 2%;
+    padding: 5%;
+    width: 18rem;
+     
+     
+    border-radius: 50px;
+    background: #C5B396;
+    box-shadow:  20px -20px 60px #a79880,
+             -20px 20px 60px #e3cead;
+    }
+    .testimonials_card p{
+        font-size: 2
+    }
+    
+}
+@media (max-width:400px) {
+    .testimonials_card{
+    margin: 5%;
+    padding: 15%;
+    width: 14rem;
+    height: 28rem;
+    aspect-ratio: 2/2.5;
+    border-radius: 50px;
+    background: #C5B396;
+    box-shadow:  20px -20px 60px #a79880,
+             -20px 20px 60px #e3cead;
+}
+.testimonials_card p{
+    font-size: 20px;
+}
+}
+    
 </style>
 
 
 
-<footer class="footer">
-    <div class="l-footer">
-    <h1>
-    <img src="./images/logo.png" alt=""></h1>
-    <p>
-    Think Green</p>
-    </div>
-    <ul class="r-footer">
-    <li>
-      <h2>
-    Social</h2>
-    <ul class="box">
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Pinterest</a></li>
-    <li><a href="#">Instagram</a></li>
-    </ul>
-    </li>
-   
-    <li>
-      <h2>
-    Get in touch</h2>
-    <address>
-        KALOSE Inc,
-        Century Park East Suite 803,
-        Los Angeles,
-        +44 (0) 207 543 5478
-    </address>
-    
-    </li>
-    </ul>
-    <div class="b-footer">
-    <p>
-    All rights reserved by ©CompanyName 2020 </p>
-    </div>
-    </footer>
-
-<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-<div hidden id="snipcart" data-api-key="NjEzM2EwZWEtZjRkNC00MTkzLWJkMDUtOTQ4MTgxMTVhOTQ3NjM3Mzc1ODIwMjE1Mjg1NDE5" data-config-add-product-behavior="none"></div>
-</body>
-</html>

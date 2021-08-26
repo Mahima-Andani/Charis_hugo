@@ -134,7 +134,7 @@ header .container{
   background-color: #9b8055;
   color: beige;
 }
-.popup, .popup2{
+/* .popup, .popup2{
   position: absolute;
   z-index: 10;
   top: 0;
@@ -238,7 +238,7 @@ header .container{
   text-decoration: none;
   font-weight: 600;
   color: #9b8055;
-}
+} */
 /* .popup2 .form-element span a{
   display: inline-flex;
 } */
