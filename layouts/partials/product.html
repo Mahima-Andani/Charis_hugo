@@ -40,7 +40,8 @@
   <div class="product">
     <div class="product__box card">
       <div class="bags"><img class="product__image" src="{{ .image }}" alt=""></div>
-        <div class="info">
+      <a href="productdescription.html" class="quick_Shop">Quick Shop</a>
+      <div class="info">
           <p class="product__name title">{{ .name }}</p>
           <h3 class="product__description">{{ .description }}</h3>
             <div class="product__price MRP">
@@ -69,7 +70,7 @@
             </button> -->
             </div>
         </div>
-    </div>
+  </div>
   </div>
 <!-- </section> -->
 <style>
@@ -96,11 +97,41 @@
   /* padding: 1rem; */
   width: 7rem;
   padding: .5rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
-.featured-products .card:hover {
-  /* box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%); */
-  box-shadow: 0 10px 5px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+.quick_Shop{
+  display: none;
+  position: absolute;
+  z-index: 3;
+  /* width:50%; */
+  padding: .9rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8a714a;
+  margin-inline: 0%;
+  transform: translateX(50%);
 }
+.featured-products .card:hover{
+  opacity: 0.7;
+}
+
+.featured-products .card:hover .quick_Shop {
+  /* box-shadow: 0 10px 5px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%); */
+  display: block;
+  
+  
+}
+
+
+
+/* .hoverbox:hover {
+  display: block;
+} */
+
 .featured-products .info h3 {
   font-size: 1rem;
   margin-block: 0.5em;
@@ -206,3 +237,12 @@
 }
 
 </style>
+<!-- <script>
+  let quickShop = document.querySelector('.quick_Shop');
+  quickShop.onclick = function () {
+    window.location.href='productdescription.html';
+    quickShop.style.opacity = 1;
+  }
+
+  
+</script> -->
