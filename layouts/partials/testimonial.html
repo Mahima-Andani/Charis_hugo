@@ -1,176 +1,56 @@
-<div class="spacer layer2 flip"></div>
-<section class="testimonial">
-    <h1 class="title_of_page">Testimonial</h1>
-    <div class="testimonials">
-        <div class="container flex">
-            <div class="testimonials_card">
-                <p>
-                    I am quite picky about my bags. When my friend told me about fashion bags from Charis Bags, I didn't pay much attention. Well, it was my birthday last night, and she gave me one of those bags as a gift. I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags 
-                </p>
-                <br>
-                <p>
-                    <b>Richard Cooper</b> (Marketing Analyst)
-                </p>
-            </div>
-            <div class="testimonials_card">
-                <p>
-                    I always prefer to have unique bags. Not all fashion bags are up to my taste, but I am glad to accept that I have fallen for Charis Bags. Their customized bags are simply marvelous. It’s eco-friendly, and so trendy.I can't explain how much I loved it. I thanked my friend a lot and now it's time to thank you too Charis Bags 
-                </p>
-                <br>
-                <p>
-                    <b>
-                    Rachel Poehler
-                    </b>(Teacher)
-                </p>
-            </div>
-            <div class="testimonials_card">
-                <p>
-                    I love my planet earth and I am going to do anything for it. I do campaigns and write journals about greener and less toxic world. Jute bags are part of my life, but the bags from the Charis Bag's made me happy, because it’s not just eco-friendly but also stylish. I can't explain how much I loved it. I thanked my friend a lot.
-                </p>
-                <p>
-                    <b>Kavita Daga</b> (Business professional)
-                </p>
-            </div>
-            
-        </div>
-    </div>
-    <!-- <div class="custom-shape-divider-top-1629810671">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div> -->
-    
-</section>
-</div>
-<div class="spacer layer2"></div>
 <style>
-    .testimonial{
-        background-color: #C5B396;
-        padding: 5% 5% 5%;
-    }
-    .testimonial h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* padding: 20%; */
-    }
-    /* .custom-shape-divider-top-1629810671 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1629810671 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    filter: drop-shadow(0 -2mm 4mm rgb(114, 92, 51));
-}
-
-.custom-shape-divider-top-1629810671 .shape-fill {
-    fill: #FFFFFF;
-} */
-/* .flip{
-    transform: rotate(180deg);
-} */
-
-.testimonials {
-    background: #C5B396;
-}
-.testimonials .flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        /* gap: 5%; */
-        padding: 5%;
-        /* padding-inline: 5%;
-        padding-block: 5%; */
-}
-    .testimonials_card{
-    margin: 5%;
-    padding: 5%;
-    width: 18rem;
-    /* height: 25rem; */
-    aspect-ratio: 2/2.5;
-    border-radius: 50px;
-    background: #C5B396;
-    box-shadow:  20px -20px 60px #a79880,
-             -20px 20px 60px #e3cead;
-}
-@media  (min-width: 750px) {
-    .testimonial h1{
-        padding: 5%;
-    }
-    /* .custom-shape-divider-top-1629810671 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    line-height: 0;
-    }
-
-    .custom-shape-divider-top-1629810671 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    filter: drop-shadow(0 -2mm 4mm rgb(114, 92, 51));
-    }
-
-    .custom-shape-divider-top-1629810671 .shape-fill {
-    fill: #FFFFFF;
-    } */
-    .flip{
-    transform: rotate(180deg);
-    }
- 
     .testimonials {
-    background: #C5B396;
+        background-color: hsl(37, 29%, 68%);
+        padding-block: 10%;
+
     }
-    .testimonials .flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-block: 5%;
+
+    .testimonials .flex {
+        /* flex-direction: column; */
+        /* justify-content: space-around; */
+        gap: 2.5em;
+        flex-wrap: wrap;
+        margin-block: 2em;
+
     }
-    .testimonials_card{
-    margin: 2%;
-    padding: 5%;
-    width: 18rem;
-    /* height: 25rem; */
-    /* aspect-ratio: 2/2.5; */
-    border-radius: 50px;
-    background: #C5B396;
-    box-shadow:  20px -20px 60px #a79880,
-             -20px 20px 60px #e3cead;
+
+    .testimonials_card {
+        padding: 1.5em;
+        max-width: 15rem;
+        /* aspect-ratio: 1/1.2; */
+        border-radius: 10px;
+        background: #C5B396;
+        box-shadow: 20px -20px 60px #a79880,
+            -20px 20px 60px #e3cead;
+        /* margin-top: 2em; */
     }
-    .testimonials_card p{
-        font-size: 2
-    }
-    
+.testimonials_card h5{
+    margin-block: 1em;
 }
-@media (max-width:400px) {
-    .testimonials_card{
-    margin: 5%;
-    padding: 15%;
-    width: 14rem;
-    height: 28rem;
-    aspect-ratio: 2/2.5;
-    border-radius: 50px;
-    background: #C5B396;
-    box-shadow:  20px -20px 60px #a79880,
-             -20px 20px 60px #e3cead;
-}
-.testimonials_card p{
-    font-size: 20px;
-}
-}
-    
+
+
+    /* @media(min-width:61.94em){
+        .testimonials .flex {
+        flex-direction: row
+        }
+
+    } */
 </style>
+<section class="testimonials">
+    <div class="container">
+    <h1 class="section_title">Testimonials</h1>
+
+        <div class="flex">
+            {{range $index, $val := .Site.Taxonomies.tags.feedback}}
+            <div class="testimonials_card">
+                {{.Content}}
+                <h5>{{.Title}}</h5>
+                <p><em>- {{.Description}}</em></p>
+            </div>
+            {{end}}
+        </div>
+
+    </div>
+
+
+</section>
