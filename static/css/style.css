@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+body {
+  line-height: 1.5;
+  /* font-family: "Poppins", sans-serif; */
 }
-img{
-    max-width: 100%;
-    display: block;
+h1, h2, h3,h4,h5{
+  font-family: 'Petit Formal Script', cursive;
 }
-a{
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
   text-decoration: none !important;
 }
-.title_of_page{
-  text-align: left;
-  margin-inline: 5%;
-  font-size: 250%;
-  border-bottom: 1px solid #352C1C;
-  opacity: 0.7;
+.container{
+  width: min(75em, 85%);
+  margin: 0 auto;
+  position: relative;
 }
-@media (max-width: 800px){
-  .title_of_page{
-    font-size: 200%;
-}
+.section_title {
+  text-align: center;
+ 
 }
 .flex{
   display: flex;
