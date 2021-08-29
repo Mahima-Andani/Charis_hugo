@@ -1,0 +1,133 @@
+  /* featured products */
+  .featured-products {
+    padding-block: 5rem;
+  }
+  .featured-products .flex {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  .featured-products .container {
+    /* width: min(1200px, 80%); */
+    width: min(1200px, 100%);
+    margin: 0 auto;
+  }
+  .featured-products .card {
+    cursor: pointer;
+    transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* border: 1px solid #dedede; */
+    border-radius: 10px;
+    /* width: 15rem; */
+    /* padding: 1rem; */
+    width: 7rem;
+    padding: .5rem;
+  }
+  .featured-products .card:hover {
+    /* box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%); */
+    box-shadow: 0 10px 5px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+  }
+  .featured-products .info h3 {
+    font-size: 1rem;
+    margin-block: 0.5em;
+    color: #1b160e;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+    text-align: center;
+    /* font-size: 1.4ch; */
+    font-size: 1.2ch;
+  }
+  .featured-products .info p {
+    transition: all 0.95s ease-out;
+    text-align: center;
+    color: #9b8055;
+    /* font-size: min(1.4rem, 7vw); */
+    font-size: min(1rem, 7vw);
+  }
+  .product__price {
+    text-align: center;
+  }
+  .featured-products .MRP {
+    transition: all 0.75s ease-out;
+    height: 100%;
+    align-items: center;
+  }
+  .featured-products .bags {
+    max-width: 20rem;
+    display: flex;
+    justify-content: center;
+  }
+  .featured-products .bags img {
+    z-index: 2;
+    transition: all 0.75s ease-out;
+    /* filter: drop-shadow(30px 10px 4px #9b8055); */
+    /* max-width: 70%; */
+    /* filter: drop-shadow(0 -2mm 2mm rgb(114, 92, 51)); */
+    max-width: 100%;
+    filter: drop-shadow(0 -.5mm .5mm rgb(114, 92, 51));
+  }
+  .featured-products .icon {
+    transition: all 0.75s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .featured-products .icon img {
+    /* width: 30px; */
+  }
+  .featured-products .icon img:hover{
+    /* border: 1.5px solid #fff2;
+    border-radius: 50%; */
+  }
+  @media (min-width: 300px){
+    .featured-products .card {
+      width: 8rem;
+    }
+  }
+  @media (min-width: 400px){
+    .featured-products .card {
+      width: 10rem;
+    }
+  }
+  @media (min-width: 500px){
+    .featured-products .container{
+      width: min(1200px, 90%);
+    }
+    .featured-products .card {
+      width: 12rem;
+    }
+    .featured-products .info h3 {
+      font-size: 1.4ch;
+    }
+    .featured-products .info p {
+        font-size: min(1.4rem, 7vw);
+    }
+  }
+  @media (min-width: 600px){
+    .featured-products .card {
+      width: 15rem;
+      padding: 1rem;
+    }
+  }
+  @media (min-width: 800px){
+    .featured-products .flex {
+      flex-wrap: nowrap;
+    }
+  .featured-products .flex {
+      display: flex;
+      justify-content: unset;
+      /* gap: 1em; */
+      flex-wrap: wrap;
+  }
+  .featured-products .container {
+      width: min(100em, 95%);
+      margin: 0 auto;
+  }
+  .featured-products .bags img {
+    max-width: 70%;
+  }
+  .featured-products .card:hover {
+    box-shadow: 0 10px 10px rgb(0 0 0 / 20%), 0px 0px 20px rgb(0 0 0 / 20%);
+  }
+  }
+  

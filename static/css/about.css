@@ -1,0 +1,56 @@
+/* Muskan about us */
+.section-6 img {
+    max-width: 100%;
+  }
+  .section-6 .grid-container {
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 3fr 1fr 1.5fr; */
+    grid-template-areas:
+      "side-img"
+      "content"
+      "lower-img";
+    margin: 2em;
+    grid-row-gap: 2em;
+  }
+  .section-6 .side-img {
+    grid-area: side-img;
+    padding-inline: 15%;
+    margin: 0;
+  }
+  .section-6 .content {
+    grid-area: content;
+  }
+  .section-6 .content p {
+    font-weight: 100;
+    font-size: 0.8em;
+  }
+  .section-6 .lower-img {
+    grid-area: lower-img;
+  }
+  @media screen and (min-width: 750px) {
+    .section-6 .grid-container {
+      height: 100vh;
+      grid-template-columns: 1.5fr 3fr;
+      grid-template-rows: 2fr 2.5fr;
+      grid-template-areas:
+        "side-img content"
+        "side-img lower-img";
+      /* grid-column-gap: 0; */
+    }
+    .section-6 .side-img {
+      grid-area: side-img;
+    }
+    .section-6 .content {
+      grid-area: content;
+    }
+    .section-6 .lower-img {
+      grid-area: lower-img;
+      padding-top: 2em;
+    }
+    .section-6 .card {
+      margin-left: 0em;
+      margin-right: 3em;
+    }
+  }

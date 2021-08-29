@@ -1,0 +1,230 @@
+
+  /* product details page-Muskan */
+  
+  .img-display{
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15%;
+    position: relative;
+  }
+  .img-showcase{
+    display: flex;
+    width: 50vw;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+  }
+  .img-showcase img{
+    max-width: 50vw;
+  }
+  .img-select{
+    display: flex;
+  }
+  .img-item{
+    margin: 0.3rem;
+  }
+  .img-item:nth-child(1),
+  .img-item:nth-child(2),
+  .img-item:nth-child(3){
+    margin-right: 0;
+  }
+  .img-item:hover{
+    opacity: 0.8;
+  }
+  .product-content{
+    padding: 2rem 1rem;
+  }
+  .product-title{
+    font-size: 3ch;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: absolute;
+    top: 0
+  }
+  .product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background-color: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5 ease;
+  }
+  .product-link:hover{
+    opacity: 0.9;
+  }
+  /* .product-rating{
+    color: #ffc107;
+  }
+  .product-rating span{
+    font-weight: 600;
+    color: black;
+  } */
+  .product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .product-price span{
+    font-weight: 300;
+  }
+  .last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+  }
+  .new-price span{
+    color: #256eff;
+  }
+  .product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding: 0.4rem;
+  }
+  .product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+  }
+  .product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  .product-detail ul li{
+    margin: 0;
+    list-style: none;
+    padding-left: 0.35rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+  .product-detail ul li span{
+    font-weight: 400;
+  }
+  .quantity{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+  .quantity button{
+    width: 15%;
+    height: 45px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 0;
+    background: #fff;
+  }
+  .quantity input{
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    width: 30%;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+  
+  }
+  .purchase-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .purchase-info .btn{
+    /* border: 1.5px solid #ddd; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    color: #fff;
+    width: 60%;
+    border: none;
+  }
+  
+  .purchase-info .btn:first-of-type{
+    background: #f7e709;
+  }
+  .purchase-info .btn:last-of-type{
+    background: #fa9d11;
+  }
+  .purchase-info .btn:hover{
+    opacity: 0.9;
+  }
+  .social-links{
+    display: flex;
+    align-items: center;
+  }
+  .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    /* color: #000; */
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+  }
+  .social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+  }
+  @media screen and (min-width:650px) {
+    .img-display{
+        width: 100%;
+        margin-top:05%;
+        margin-right: 50%;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 10%  repeat(2, 1fr) 10%; 
+    }
+    .product-imgs{
+        grid-column: 2/3;
+    }
+    /* .product-content{
+      grid-column: 3/4;
+    } */
+    .img-showcase{
+        width: unset;
+    }
+    .img-showcase img{
+        min-width: 100%;
+    }
+    .img-item{
+        width: 15%;
+        margin: 0 auto;
+    }
+    .product-title{
+        font-size: 5ch;
+        position: relative;
+        top: 0
+    }
+    .purchase-info {
+      flex-direction: row;
+      gap: 5%;
+      }
+      .quantity{
+        justify-content:flex-start;
+        margin-bottom: 5%;
+      }
+      .product-link{
+        display: inline-block;
+      }
+      .purchase-info btn{
+        width: 70%;
+      }
+  
+    
+  }
