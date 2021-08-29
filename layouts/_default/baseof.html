@@ -4,8 +4,10 @@
     <body>
         {{- partial "header.html" . -}}
         
-        {{- block "main" . }}{{- end }}
-        {{- block "second" . }}{{- end }}
+        {{- block "slider" . }}{{- end }}
+        <!-- {{- block "featured_products" . }}{{- end }} -->
+<!-- {{ partial "product_single.html" . }} -->
+{{- block "testimonials" . }}{{- end }}
         
         {{- partial "footer.html" . -}}
     </body>
