@@ -45,8 +45,6 @@ document.querySelector("#show-register").addEventListener("click",function(){
 
 // slider new
 
-
- // MAIN FUNCTION
  let FgSlider = function (fgContainer) {
   this.fgContainer = document.querySelector(`#${fgContainer}`) || document.querySelector('.fg-slider');
   this.setup = arguments[1];
